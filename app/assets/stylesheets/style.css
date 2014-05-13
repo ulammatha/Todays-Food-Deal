@@ -1,0 +1,195 @@
+﻿/* 
+* Theme Author: cristoforo
+* Theme Name: Dealstrap
+* Version: 1.1
+*/
+/********************************************************
+      General
+********************************************************/
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+body {
+    color: #525252;
+    font-family: 'Droid Sans', sans-serif;
+}
+h4 {
+    font-family: 'Droid Serif', serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+legend {
+    font-size: 30px;
+    font-family: 'Droid Serif', serif;
+    font-weight: 400;
+    line-height: 48px;
+    border-bottom: 1px dotted #D8D8D8;
+}
+legend img { margin-bottom: 5px }
+.well {
+    border: 1px solid #E8E8E8;
+    background-color: transparent;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.carousel { margin-bottom: 0px }
+.table th,
+.table td { border-top: 1px dotted #D8D8D8 }
+.firstrow td { border: none }
+.page-content { margin-top: 19px }
+.page-content h4 {
+    font-family: 'Droid Serif', serif;
+    color: #3BB0DB;
+}
+.text-center { text-align: center }
+.text-strike { text-decoration: line-through }
+.text-highlight-small {
+    font-size: 24px;
+    color: #FF9228;
+}
+.text-highlight-large {
+    font-size: 30px;
+    color: #FF9228;
+    font-weight: 400;
+    line-height: 48px;
+}
+/********************************************************
+      Landing Page
+********************************************************/
+#landing-page { padding-top: 15% }
+em.desc {
+    font-size: 16px;
+    font-family: 'Droid Serif', serif;
+    line-height: 26px;
+    font-weight: 400;
+}
+/********************************************************
+      Navbar
+********************************************************/
+.navbar-form {
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+.navbar .nav { margin-right: 0px }
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+    border-bottom-color: #fff;
+    border-top-color: #fff;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+    border-bottom-color: #fff;
+    border-top-color: #fff;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #51A351;
+    color: #ffffff;
+}
+ul.signup li { margin-left: 4px }
+ul.signup .dropdown-menu { padding: 10px }
+ul.signup .dropdown-menu input { display: block }
+/********************************************************
+      Unit
+********************************************************/
+.unit { padding: 19px }
+.unit-block { margin-bottom: 20px }
+.unit-bg {
+    background: url('../img/itembg.png') top left repeat #fff;
+    border: 3px solid #EFEFEF;
+    -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.15);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.15);
+    border-radius: 0px;
+}
+.unit ul.nav-pills { margin-bottom: 0px }
+.caption hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px dotted #D8D8D8;
+}
+/********************************************************
+      Social Icons
+********************************************************/
+ul.socialicons {
+    margin: 5px 0 5px 0;
+    height: 39px;
+    border: none;
+}
+ul.socialicons li {
+    float: left;
+    border: none;
+}
+ul.socialicons li a:link,
+ul.socialicons li a:visited {
+    display: block;
+    width: 45px;
+    height: 39px;
+    text-indent: -3600px;
+    background: url("../img/social-icons.png") no-repeat scroll 0px 0px transparent;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+}
+ul.socialicons li.Facebook a { background-position: 0px 0px }
+ul.socialicons li.Twitter a { background-position: -50px 0px }
+ul.socialicons li.Pinterest a { background-position: -100px 0px }
+ul.socialicons li.RSS a { background-position: -150px 0px }
+ul.socialicons li.Email a {
+    background-position: -200px 0px;
+    width: 40px;
+}
+ul.socialicons li a:hover {
+    cursor: pointer;
+    -webkit-transform: translate(0px,-3px);
+    -moz-transform: translate(0px,-3px);
+    -o-transform: translate(0px,-3px);
+    -ms-transform: translate(0px,-3px);
+}
+/********************************************************
+     Footer
+********************************************************/
+.footer ul { margin-bottom: 0px }
+.footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+/********************************************************
+      Media Query
+********************************************************/
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) { 
+	.page-content .span6 { width: 530px }
+	.page-content .span3 { width: 272px }
+	.view-deal { margin-right: 4px }
+}
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 1200px) { 
+	.page-content .span6 { width: 420px }
+	.page-content .span3 { width: 222px }
+	.view-deal {
+	    display: block;
+	    margin-bottom: 10px;
+	}
+	.social { margin-bottom: 40px; }
+}
+/* Tablet
+------------------------- */
+@media (max-width: 768px) { 
+	.login-input { width: 100% }
+	.view-deal { margin-right: 4px }
+	.footer { text-align: center }
+	.footer ul {
+	    float: none;
+	    margin-bottom: 10px;
+	}
+}
