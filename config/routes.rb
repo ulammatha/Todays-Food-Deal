@@ -1,8 +1,8 @@
 TodaysFoodDeals::Application.routes.draw do
   root to: "home#index"
-  get 'about', :to => 'home#about', :as => 'about'
-  get 'contact', :to => 'home#contact', :as => 'contact'
-  get 'terms', :to => 'home#terms', :as => 'terms'
+  get 'about', :to => 'about#about', :as => 'about'
+  get 'contact', :to => 'about#contact', :as => 'contact'
+  get 'terms', :to => 'about#terms', :as => 'terms'
   #get 'index', :to => 'home#index', :as => 'index'
 
   resources :home, only: [:index, :show, :new, :create]

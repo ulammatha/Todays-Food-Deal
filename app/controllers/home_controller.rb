@@ -5,6 +5,8 @@ class HomeController < ApplicationController
   end
 
   def show
+    @deal= Deal.find(params[:id])
+    
   end 
 
   def new
@@ -12,26 +14,17 @@ class HomeController < ApplicationController
   end
 
   def create
-   @deal = Deal.new(deal_params)
-   binding.pry
-    if @deal.save
-     redirect_to action: 'index', notice: 'deal was successfully added.' 
 
-    #render action: 'show', status: :created, location:@pin
+   @deal = Deal.new(deal_params)
+    if @deal.save
+    
+     redirect_to action: 'index', notice: 'deal was successfully added.' 
     else    
+      redirect_to new_home_url 
     end
   end
 
   def edit
-  end 
-
-  def about
-  end
-
-  def contact
-  end
-
-  def terms
   end 
 
   def deals

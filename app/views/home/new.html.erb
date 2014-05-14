@@ -1,88 +1,36 @@
 <%= simple_form_for(@deal,url: {controller: "home", action: "create"}, html: {class: "container"}) do |f| %>
-
-  <!--  <% if @deal.errors.any? %>
-      <div id="error_explanation">
-          <h2><%= pluralize(@deals.errors.count, "error") %> prohibited this deal from being saved:</h2>
-        <ul>
-          <% @deal.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
-        </ul>
-      </div>
-   <% end %> --> 
-
     <div class="row">
-    	<h1 class="btn-info h1-w">Add Deal</h1>
-      <!-- <div class="small-3 columns">
-        <%= f.label :recipe_name, class: "right inline" %>
-      </div> -->
-      <div class="small-9 columns">
-        <%= f.input :recipe_name %>
+      <div class="span9">  
+      	<h1 class="btn-info h1-w">Add Deal</h1>
+        <div class="small-9 columns">
+          <%= f.input :recipe_name %>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :description %>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :current_amount %>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :discount %>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :previous_amount%>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :expiry, as: :date %>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :coupon_code %>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :available_coupons %>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :image, label: 'Deal Image' %>
+        </div>     
+          <%= f.submit 'Create Deal',class: "btn btn-success col-md-8" %>
+          <%= link_to 'Back', home_index_path , class: "btn btn-info col-md-8"%>
       </div>
-    </div>
-    <div class="row">
-    <!--   <div class="small-3 columns">
-        <%= f.label :description, class: "right inline" %>
-      </div> -->
-      <div class="small-9 columns">
-        <%= f.input :description %>
       </div>
-    </div>
-    <div class="row">
-     <!--  <div class="small-3 columns">
-        <%= f.label :current_amount, class: "right inline" %>
-      </div> -->
-      <div class="small-9 columns">
-        <%= f.input :current_amount %>
-      </div>
-    </div>
-    <div class="row">
-      <!-- <div class="small-3 columns">
-        <%= f.label :discount, class: "right inline" %>
-      </div> -->
-      <div class="small-9 columns">
-        <%= f.input :discount %>
-      </div>
-    </div>
-    <div class="row">
-      <!-- <div class="small-3 columns">
-        <%= f.label :previous_amount, class: "right inline" %>
-      </div> -->
-      <div class="small-9 columns">
-        <%= f.input :previous_amount%>
-      </div>
-    </div>
-    <div class="row">
-      <!-- <div class="small-3 columns">
-        <%= f.label :expiry, class: "right inline" %>
-      </div> -->
-      <div class="small-9 columns">
-        <%= f.input :expiry, as: :date %>
-      </div>
-    </div>
-    <div class="row">
-     <!--  <div class="small-3 columns">
-        <%= f.label :coupon_code, class: "right inline" %>
-      </div> -->
-      <div class="small-9 columns">
-        <%= f.input :coupon_code %>
-      </div>
-    </div>
-    <div class="row">
-     <!--  <div class="small-3 columns">
-        <%= f.label :available_coupons, class: "right inline" %>
-      </div> -->
-      <div class="small-9 columns">
-        <%= f.input :available_coupons %>
-      </div>
-    </div> 
-    <div class="row">
-      <div class="small-9 columns">
-        <%= f.input :image, label: 'Deal Image' %>
-      </div>
-    </div> 
-    <div class="row ">     
-        <%= f.submit 'Create Deal',class: "btn btn-success col-md-8" %>
-        <%= link_to 'Back', home_index_path , class: "btn btn-info col-md-8"%>
-    </div> 
 <% end %>
