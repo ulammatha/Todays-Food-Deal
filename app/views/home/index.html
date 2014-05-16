@@ -1,4 +1,4 @@
-﻿        <div class="container">
+﻿<div class="container">
             <div class="row">
                 <div class="span9">
                     <div class="row unit-block">
@@ -9,10 +9,10 @@
                                     Today's Deal</legend>
                                 <ul class="nav nav-pills">
                                     <li class="active"><a href="list.html">All</a></li>
-                                    <li><a href="list.html">Dining</a></li>
-                                    <li><a href="list.html">Activities & Events</a></li>
-                                    <li><a href="list.html">Health & Beauty</a></li>
-                                    <li><a href="list.html">Products</a></li>
+                                    <li><a href="list.html">Present Deals</a></li>
+                                    <li><a href="list.html">Future Deals</a></li>
+                                    <li><a href="list.html">Past Deals</a></li>
+                                    <li><a href="list.html">Reviews</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -63,18 +63,26 @@
                                             <% @deals.each do |deal| %>  
                                                 <li class="span3">
                                                     <div class="thumbnail unit-bg">
-                                                            <%=link_to image_tag(deal.image.url()) %>
+                                                            <%=link_to image_tag(deal.image.url(),size: "300x140"),home_path(deal) %>
                                                         <div class="caption">
                                                             <h2><%= deal.recipe_name %></h2>
-                                                           <p> <%= deal.description %> </p>
                                                             <p>
                                                                 <%= link_to 'View', home_path(deal) , class: "btn btn-success"%>
                                                                     <span class="help-inline text-highlight-small">
                                                                         $<%=deal.current_amount %></span> <span class="help-inline text-strike">$<%=deal.previous_amount %> </span>
                                                             </p>
                                                             <hr>
-                                                            <p><%= deal.sold_coupons%>Purchased</p>
-                                                            <p>Exipry: <%= deal.expiry.to_date %></p>
+                                                            <% if deal.sold_coupons.present? %>
+                                                            <p ><%= deal.sold_coupons%>&nbsp;Purchased</p>
+                                                            <% else %>
+                                                            <p>0 Purchased</p>
+                                                            <% end %>
+                                                            <p>Exipry: <%= deal.expiry.to_date %> </p>
+                                                            <% if (deal.expiry.to_date - Date.today).to_i >=0 %>
+                                                            <p><%=(deal.expiry.to_date - Date.today).to_i %>Days Left</p>
+                                                            <% else %>
+                                                            <strong style="color:Red"> Exipred</strong>
+                                                            <% end %>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -85,14 +93,6 @@
                         <% end %>  
                 </div> 
             </div>
-        </div>
-    <div id="fb-root">
-    </div>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s);
-            js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=279705068712379";
-            fjs.parentNode.insertBefore(js, fjs);
-        } (document, 'script', 'facebook-jssdk'));
-    </script>
+</div>
+    
 

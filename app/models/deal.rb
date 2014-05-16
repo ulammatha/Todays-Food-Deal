@@ -1,6 +1,12 @@
 class Deal < ActiveRecord::Base
   belongs_to :eatery
-  has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+  has_attached_file :image,
+  :styles => {
+  :tiny => "25x25#",
+  :thumbnail => "100x100#",
+  :small  => "150x150>",
+  :medium => "300x300>" },
+  :default_url => "/images/logo.png"
   do_not_validate_attachment_file_type :image
   validates :recipe_name, presence: true
   validates :description, presence: true

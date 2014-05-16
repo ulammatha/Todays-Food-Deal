@@ -2,146 +2,135 @@
     <title>Relax Spa and Beauty | Dealstrap</title>
 </head>
 <body>
-    <div class="container">
         <div class="row">
             <div class="span9">
                 <div class="row unit-block">
                     <div class="span9 unit-bg">
-                              <div class="unit">
-                                    <% if @deal.present? %>  
-                                       <div class="row page-content">
-                                            <div class="span3">
+                        <div class="unit">
+                              <% if @deal.present? %> 
+                                  <div class="unit-bg" > 
+                                  <%=image_tag(@deal.image)%>
+                                  </div>
+                                  <div class="row page-content">
+                                          <div class="span3">
                                               <div class="thumbnail unit-bg" > 
-                                                    <div class="well text-center">
-                                                                <ul class="unstyled">
-                                                                    <li><span class="text-highlight-large">$<%=@deal.current_amount %></span></li>
-                                                                    <li>
-                                                                        <button type="submit" class="btn btn-large btn-success">
-                                                                            BUY NOW&nbsp;<i class="icon-shopping-cart icon-white"></i></button>
-                                                                    </li>
-                                                                    <li>&nbsp;</li>
-                                                                    <li>
-                                                                        <table class="table">
-                                                                            <tr class="firstrow">
-                                                                                <td>
-                                                                                    Savings
-                                                                                </td>
-                                                                                <td>
-                                                                                    <%=@deal.discount%>%
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    Purchased
-                                                                                </td>
-                                                                                <td>
-                                                                                    <%=@deal.sold_coupons%>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    Remaining
-                                                                                </td>
-                                                                                <td>
-                                                                                    <%=@deal.available_coupons%>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </li>
-                                                                </ul>
-                                                    </div>
-                                                    <div class="well">
-                                                        <h4>
-                                                            How to Reserve</h4>
-                                                        <ul>
-                                                            <li>Lorem ipsum dolor sit amet</li>
-                                                            <li>Consectetur adipiscing elit</li>
-                                                            <li>Integer molestie lorem at massa</li>
-                                                            <li>Facilisis in pretium nisl aliquet</li>
-                                                            <li>Nulla volutpat aliquam velit
-                                                                <ul>
-                                                                    <li>Phasellus iaculis neque</li>
-                                                                    <li>Purus sodales ultricies</li>
-                                                                    <li>Vestibulum laoreet porttitor sem</li>
-                                                                    <li>Ac tristique libero volutpat at</li>
-                                                                </ul>
+                                                    <ul class="unstyled">
+                                                         <li><span class="text-highlight-large">$<%=@deal.current_amount %></span></li>
+                                                          <li>
+                                                           <button type="submit" class="btn btn-large btn-success">
+                                                            BUY NOW&nbsp;<i class="icon-shopping-cart icon-white"></i></button>
                                                             </li>
-                                                            <li>Faucibus porta lacus fringilla vel</li>
-                                                            <li>Aenean sit amet erat nunc</li>
-                                                            <li>Eget porttitor lorem</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                        </div> 
-                                    <% end %>   
-                                    <legend>Relax Spa and Beauty</legend>
-                                    <div id="myCarousel" class="carousel slide" data-interval="3000">
-                                        <!-- Carousel items -->
-                                        <div class="carousel-inner">
-                                            <div class="active item">
-                                                <img src="app/assets/images/banner3.jpg" alt="">
-                                                <div class="carousel-caption">
-                                                    <h4>
-                                                        First Thumbnail label</h4>
-                                                    <p>
-                                                        Description</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Carousel nav -->
-                                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                                        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                                    </div>
-                                    <div class="row page-content">
-                                        <div class="span6">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
-                                                minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-                                                ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-                                                velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-                                                augue duis dolore te feugait nulla facilisi.</p>
-                                            <h4>
-                                                Gallery</h4>
-                                            <ul class="thumbnails">
-                                                <li class="span2"><a href="assets/app/img/large1.jpg" title="Image #1 caption..."
-                                                    class="thumbnail fancybox" data-fancybox-group="gallery">
-                                                    <img src="assets/app/img/thumb1.jpg" alt="">
-                                                </a></li>
-                                                <li class="span2"><a href="assets/app/img/large2.jpg" title="Image #2 caption..."
-                                                    class="thumbnail fancybox" data-fancybox-group="gallery">
-                                                    <img src="assets/app/img/thumb2.jpg" alt="">
-                                                </a></li>
-                                                <li class="span2"><a href="assets/app/img/large3.jpg" title="Image #3 caption..."
-                                                    class="thumbnail fancybox" data-fancybox-group="gallery">
-                                                    <img src="assets/app/img/thumb3.jpg" alt="">
-                                                </a></li>
-                                                <li class="span2"><a href="assets/app/img/large4.jpg" title="Image #4 caption..."
-                                                    class="thumbnail fancybox" data-fancybox-group="gallery">
-                                                    <img src="assets/app/img/thumb4.jpg" alt="">
-                                                </a></li>
-                                            </ul>
-                                            <h4>
-                                                Location</h4>
-                                            <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0"
-                                                marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=twitter+near+San+Francisco,+CA,+United+States&amp;aq=0&amp;oq=twitter+san+fra&amp;sll=37.0625,-95.677068&amp;sspn=49.043149,74.443359&amp;ie=UTF8&amp;hq=&amp;hnear=Twitter+Bldg,+Market+St,+San+Francisco,+California+94103&amp;ll=37.776606,-122.416728&amp;spn=0.00301,0.004544&amp;t=m&amp;z=14&amp;output=embed">
-                                            </iframe>
-                                            <br />
-                                            <a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=twitter+near+San+Francisco,+CA,+United+States&amp;aq=0&amp;oq=twitter+san+fra&amp;sll=37.0625,-95.677068&amp;sspn=49.043149,74.443359&amp;ie=UTF8&amp;hq=&amp;hnear=Twitter+Bldg,+Market+St,+San+Francisco,+California+94103&amp;ll=37.776606,-122.416728&amp;spn=0.00301,0.004544&amp;t=m&amp;z=14"
-                                                target="_blank">View Larger Map</a><br />
-                                            <br />
-                                        </div>                                
-                                    </div>
-                                </div>
-                    </div>    
-                </div>
-                <div class="row">
-                    <div class="span9">
-                        <ul class="thumbnails">
-                            <li class="span3">
-                                <div class="thumbnail unit-bg">
+                                                            <li>&nbsp;</li>
+                                                            <li>
+                                                            <table class="table">
+                                                             <tr class="firstrow">
+                                                             <td>
+                                                             Savings
+                                                             </td>
+                                                             <td>
+                                                             <%=@deal.discount%>%
+                                                             </td>
+                                                              </tr>
+                                                              <tr>
+                                                              <td>
+                                                              Purchased
+                                                              </td>
+                                                              <% if @deal.sold_coupons.present? %>
+                                                              <td>
+                                                              <%=@deal.sold_coupons%>
+                                                              </td>
+                                                              <% else %>
+                                                              <td>
+                                                              0
+                                                              </td>
+                                                              <% end %>
+                                                              </tr>
+                                                              <tr>
+                                                              <td>
+                                                              Remaining
+                                                              </td>
+                                                              <td>
+                                                              <%=@deal.available_coupons%>
+                                                              </td>
+                                                              </tr>
+                                                              </table>
+                                                              </li>
+                                                    </ul>
+                                              </div>
+                                          </div>
+                                           
+                                            <div class="span3">
+                                                          <h4>Deal Details</h4>
+                                                          <p><%= @deal.description %></p>
+                                            </div> 
+                                  </div>
+                                      <legend>Restaurant Name</legend>
+                                      <div id="myCarousel" class="carousel slide" data-interval="3000">
+                                          <!-- Carousel items -->
+                                          <div class="carousel-inner">
+                                              <div class="active item">
+                                                  <img src="app/assets/images/banner3.jpg" alt="">
+                                                  <div class="carousel-caption">
+                                                      <h4>
+                                                          First Thumbnail label</h4>
+                                                      <p>
+                                                          Description</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- Carousel nav -->
+                                          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                                          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                                      </div>
+                                      <div class="row page-content">
+                                          <div class="span6">
+                                              <p>
+                                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                                  euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                                  minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                                  ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+                                                  velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                                  eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                                                  augue duis dolore te feugait nulla facilisi.</p>
+                                              <h4>
+                                                  Gallery</h4>
+                                              <ul class="thumbnails">
+                                                  <li class="span2"><a href="assets/app/img/large1.jpg" title="Image #1 caption..."
+                                                      class="thumbnail fancybox" data-fancybox-group="gallery">
+                                                      <img src="assets/app/img/thumb1.jpg" alt="">
+                                                  </a></li>
+                                                  <li class="span2"><a href="assets/app/img/large2.jpg" title="Image #2 caption..."
+                                                      class="thumbnail fancybox" data-fancybox-group="gallery">
+                                                      <img src="assets/app/img/thumb2.jpg" alt="">
+                                                  </a></li>
+                                                  <li class="span2"><a href="assets/app/img/large3.jpg" title="Image #3 caption..."
+                                                      class="thumbnail fancybox" data-fancybox-group="gallery">
+                                                      <img src="assets/app/img/thumb3.jpg" alt="">
+                                                  </a></li>
+                                                  <li class="span2"><a href="assets/app/img/large4.jpg" title="Image #4 caption..."
+                                                      class="thumbnail fancybox" data-fancybox-group="gallery">
+                                                      <img src="assets/app/img/thumb4.jpg" alt="">
+                                                  </a></li>
+                                              </ul>
+                                              <h4>
+                                                  Location</h4>
+                                              <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0"
+                                                  marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=twitter+near+San+Francisco,+CA,+United+States&amp;aq=0&amp;oq=twitter+san+fra&amp;sll=37.0625,-95.677068&amp;sspn=49.043149,74.443359&amp;ie=UTF8&amp;hq=&amp;hnear=Twitter+Bldg,+Market+St,+San+Francisco,+California+94103&amp;ll=37.776606,-122.416728&amp;spn=0.00301,0.004544&amp;t=m&amp;z=14&amp;output=embed">
+                                              </iframe>
+                                              <br />
+                                              <a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=twitter+near+San+Francisco,+CA,+United+States&amp;aq=0&amp;oq=twitter+san+fra&amp;sll=37.0625,-95.677068&amp;sspn=49.043149,74.443359&amp;ie=UTF8&amp;hq=&amp;hnear=Twitter+Bldg,+Market+St,+San+Francisco,+California+94103&amp;ll=37.776606,-122.416728&amp;spn=0.00301,0.004544&amp;t=m&amp;z=14"
+                                                  target="_blank">View Larger Map</a><br />
+                                              <br />
+                                          </div>                                
+                                      </div>
+                              <% end %>  
+                            
+                
+                      <div class="row">
+                           <div class="span9">
+                             <ul class="thumbnails">
+                               <li class="span3">
+                                 <div class="thumbnail unit-bg">
                                     <a href="post.html">
                                         <img src="assets/app/img/deal1.jpg" alt="deal1" width="100%"></a>
                                     <div class="caption">
@@ -159,22 +148,15 @@
                                         <small><i class="icon-tag"></i>&nbsp;2 Purchased&nbsp;&nbsp;<i class="icon-time"></i>&nbsp;2
                                             Days Remaining</small>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
+                                 </div>
+                                </li>
+                              </ul>
+                             </div>
+                        </div>
+                      </div> 
+                   </div>    
+
             </div>
         </div>
     </div>
-    <div id="fb-root">
-    </div>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s);
-            js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=279705068712379";
-            fjs.parentNode.insertBefore(js, fjs);
-        } (document, 'script', 'facebook-jssdk'));
-    </script>
 </body>
