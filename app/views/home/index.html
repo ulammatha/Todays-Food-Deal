@@ -14,6 +14,15 @@
                                     <li><a href="list.html">Past Deals</a></li>
                                     <li><a href="list.html">Reviews</a></li>
                                 </ul>
+                                <div class="unit">
+                                    <p> Search with deal name or restaurant name</p>
+                                    <%= form_tag home_index_path, method: :get do %>
+                                    <div class="field">
+                                    <%= text_field_tag :search, params[:search] %>
+                                    <%= submit_tag "Deal Search", name: nil, class: "btn btn-success" %>
+                                    </div>
+                                    <% end %>
+                                 </div>
                             </div>
                         </div>
                     </div>
@@ -60,7 +69,7 @@
                               <div class="row">
                                     <div class="span9">
                                         <ul class="thumbnails">
-                                            <% @deals.each do |deal| %>  
+                                            <% @deals.each do |deal| %>
                                                 <li class="span3">
                                                     <div class="thumbnail unit-bg">
                                                             <%=link_to image_tag(deal.image.url(),size: "300x140"),home_path(deal) %>
@@ -86,13 +95,13 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                            <% end %>  
+                                            <% end %>
                                         </ul>
                                     </div>
-                               </div>  
-                        <% end %>  
-                </div> 
+                               </div>
+                        <% end %>
+                </div>
             </div>
 </div>
-    
+
 

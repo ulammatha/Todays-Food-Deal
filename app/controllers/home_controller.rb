@@ -1,13 +1,12 @@
 class HomeController < ApplicationController
   def index
-    @deals=Deal.all
-    #binding.pry
+    @deals=Deal.search(params[:search])
   end
 
   def show
     @deal= Deal.find(params[:id])
-    
-  end 
+
+  end
 
   def new
     @deal= Deal.new
@@ -17,15 +16,15 @@ class HomeController < ApplicationController
 
    @deal = Deal.new(deal_params)
     if @deal.save
-    
-     redirect_to action: 'index', notice: 'deal was successfully added.' 
-    else    
-      redirect_to new_home_url 
+
+     redirect_to action: 'index', notice: 'deal was successfully added.'
+    else
+      redirect_to new_home_url
     end
   end
 
   def edit
-  end 
+  end
 
   def deals
   end

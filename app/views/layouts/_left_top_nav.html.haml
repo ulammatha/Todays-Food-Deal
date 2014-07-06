@@ -1,0 +1,72 @@
+.navbar.navbar-static-top
+  .container
+    .navbar-form.well.pull-right.unit-bg
+      .login-input.pull-left
+        %input.span2{placeholder: "Email", type: "text"}/
+        %input.span2{placeholder: "Password", type: "password"}/
+      %ul.signup.nav.pull-right
+        %li
+          %button.btn.btn-primary{type: "submit"}
+            Log in
+        %li.dropdown.btn-group
+          %button.btn.btn-success.dropdown-toggle{"data-toggle" => "dropdown"}
+            Sign up
+            %span.caret
+          .dropdown-menu{role: "menu"}
+            %form{style: "margin-bottom: 0"}
+              %p
+                %input{placeholder: "Email", type: "text"}/
+              %p
+                %input{placeholder: "Password", type: "password"}/
+              %p
+                %input{placeholder: "Username", type: "text"}/
+              %p
+                %input.btn.btn-success{type: "submit", value: "Start"}/
+.container-span3
+  .row-span3
+    .span3
+      .well.unit-bg
+        %a{href: "list.html"}
+          %img{alt: "logo", src: "assets/app/img/logo.png", width: "100%"}/
+      .well.unit-bg
+        %ul.nav.nav-list
+          %li.active
+            %a{href: "list.html"}
+              %i.icon-asterisk>
+              \ Today's Deal
+          %li
+            %a{href: "list.html"}
+              %i.icon-headphones>
+              \ Products
+          %li
+            %a{href: "list.html"}
+              %i.icon-briefcase>
+              \ Escapes
+          %li
+            %a{href: "list.html"}
+              %i.icon-tag>
+              \ Past Deals
+          %li
+            %a{href: "#"}
+              %i.icon-comment>
+              \ Discussion
+          %li.divider
+          %li
+            %a{href: "contact.html"}
+              %i.icon-question-sign>
+              \ Help
+      .well.unit-bg
+        %p
+          %i.icon-envelope>
+          \ Get Deal Alerts
+        .input-append
+          %input#inputEmail.span2{placeholder: "Enter your email", type: "text"}/
+          %button.btn{type: "button"}
+            OK
+      .well.unit-bg
+        %p
+          %i.icon-heart>
+          \ Follow Us
+        %ul.unstyled.social
+          %li
+            .fb-like-box{"data-header" => "false", "data-href" => "https://www.facebook.com/cocacola", "data-show-faces" => "false", "data-stream" => "false", "data-width" => "180"}
