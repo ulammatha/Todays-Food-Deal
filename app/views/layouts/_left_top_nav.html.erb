@@ -1,34 +1,18 @@
 <div class="navbar navbar-static-top">
-        <div class="container">
-            <div class="navbar-form well pull-right unit-bg">
+    <div class="container">
+        <div class="navbar-form well pull-right unit-bg">
+            <ul class="signup nav pull-right">
+            <% if current_user.present? %>
+            <%=link_to "SignOut",destroy_user_session_path,method: :delete,class:"btn btn-warning btn-lg" %>
+            <% else %>
                 <div class="login-input pull-left">
-                    <input class="span2" type="text" placeholder="Email">
-                    <input class="span2" type="password" placeholder="Password">
+                <%= link_to "SignIn", new_user_session_path, {class: "btn btn-primary"}%>
+                <%= link_to "SignUp", new_user_registration_path, {class: "btn btn-success"}%>
                 </div>
-                <ul class="signup nav pull-right">
-                    <li>
-                        <button type="submit" class="btn btn-primary">
-                            Log in</button></li>
-                    <li class="dropdown btn-group">
-                        <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                            Sign up <span class="caret"></span>
-                        </button>
-                        <div class="dropdown-menu" role="menu">
-                            <form style="margin-bottom: 0">
-                            <p>
-                                <input type="text" placeholder="Email"></p>
-                            <p>
-                                <input type="password" placeholder="Password"></p>
-                            <p>
-                                <input type="text" placeholder="Username"></p>
-                            <p>
-                                <input class="btn btn-success" type="submit" value="Start"></p>
-                            </form>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <% end %>
+            </ul>
         </div>
+    </div>
  </div>
  <div class="container-span3">
         <div class="row-span3">
@@ -57,17 +41,19 @@
                             OK</button>
                     </div>
                 </div>
-                <div class="well unit-bg">
-                    <p>
+               <% if current_user %>
+                    <div class="well unit-bg">
+                        <p>
                         <i class="icon-heart"></i>&nbsp;Follow Us</p>
-                    <ul class="unstyled social">
-                        <li>
-                            <div class="fb-like-box" data-href="https://www.facebook.com/cocacola"
-                                data-width="180" data-show-faces="false" data-stream="false" data-header="false" >
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                        <ul class="unstyled social">
+                            <li>
+                                <div class="fb-like-box" data-href="https://www.facebook.com/cocacola"
+                                    data-width="180" data-show-faces="false" data-stream="false" data-header="false" >
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+               <% end %>
             </div>
         </div>
 </div>

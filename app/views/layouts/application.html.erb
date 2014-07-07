@@ -15,8 +15,14 @@
     <meta name="author" content="">
 </head>
 <body>
-	<%= render 'layouts/left_top_nav' %>
-    <%= yield %>
+    <%= render 'layouts/left_top_nav' %>
+    <div class="container">
+      <div class="row">
+       <div class="span9">
+        <%= yield %>
+       </div>
+      </div>
+    </div>
     <%= render 'layouts/footer' %>
 
  <!-- Placed at the end of the document so the pages load faster -->

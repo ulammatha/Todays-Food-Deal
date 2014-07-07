@@ -1,4 +1,5 @@
 TodaysFoodDeals::Application.routes.draw do
+  devise_for :users
   root to: "home#index"
   get 'about', :to => 'about#about', :as => 'about'
   get 'contact', :to => 'about#contact', :as => 'contact'
@@ -6,7 +7,8 @@ TodaysFoodDeals::Application.routes.draw do
   #get 'index', :to => 'home#index', :as => 'index'
 
   resources :home, only: [:index, :show, :new, :create]
-   
+  resources :eatery, only: [:new, :create]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

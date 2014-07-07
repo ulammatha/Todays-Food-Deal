@@ -1,0 +1,27 @@
+<%= simple_form_for(@eatery,url: {controller: "eatery", action: "create"}, html: {class: "container"}) do |f| %>
+    <div class="row">
+      <div class="span9">
+      	<h1>Add Restaurant</h1>
+        <div class="small-9 columns">
+          <%= f.input :eatery_name %>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :eatery_description %>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :eatery_contact %>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :eatery_email %>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :eatery_address%>
+        </div>
+        <div class="small-9 columns">
+          <%= f.input :image, label: 'Deal Image' %>
+        </div>
+          <%= f.submit 'Register',class: "btn btn-success col-md-8" %>
+          <%= link_to 'Back', root_path , class: "btn btn-info col-md-8"%>
+      </div>
+      </div>
+<% end %>

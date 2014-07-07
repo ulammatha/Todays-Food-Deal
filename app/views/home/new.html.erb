@@ -1,7 +1,7 @@
 <%= simple_form_for(@deal,url: {controller: "home", action: "create"}, html: {class: "container"}) do |f| %>
     <div class="row">
-      <div class="span9">  
-      	<h1 class="btn-info h1-w">Add Deal</h1>
+      <div class="span9">
+      	<h1 >Add Deal</h1>
         <div class="small-9 columns">
           <%= f.input :recipe_name %>
         </div>
@@ -28,7 +28,7 @@
         </div>
         <div class="small-9 columns">
           <%= f.input :image, label: 'Deal Image' %>
-        </div>     
+        </div>
           <%= f.submit 'Create Deal',class: "btn btn-success col-md-8" %>
           <%= link_to 'Back', home_index_path , class: "btn btn-info col-md-8"%>
       </div>

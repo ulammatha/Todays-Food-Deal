@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  #
   def index
     @deals=Deal.search(params[:search])
   end
