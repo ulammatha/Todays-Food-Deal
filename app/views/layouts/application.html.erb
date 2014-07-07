@@ -18,9 +18,12 @@
     <%= render 'layouts/left_top_nav' %>
     <div class="container">
       <div class="row">
-       <div class="span9">
-        <%= yield %>
-       </div>
+        <div class="span9">
+            <% flash.each do |name, msg| %>
+            <%= content_tag(:div, msg, class: "alert alert-error") %>
+            <% end %>
+            <%= yield %>
+        </div>
       </div>
     </div>
     <%= render 'layouts/footer' %>
