@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class DealController < ApplicationController
   #
   def index
     @deals=Deal.search(params[:search])
@@ -20,7 +20,7 @@ class HomeController < ApplicationController
 
      redirect_to action: 'index', notice: 'deal was successfully added.'
     else
-      redirect_to new_home_url
+      redirect_to new_deal_url
     end
   end
 

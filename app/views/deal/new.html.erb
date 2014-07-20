@@ -1,4 +1,4 @@
-<%= simple_form_for(@deal,url: {controller: "home", action: "create"}, html: {class: "container"}) do |f| %>
+<%= simple_form_for(@deal,url: {controller: "deal", action: "create"}, html: {class: "container"}) do |f| %>
     <div class="row">
       <div class="span9">
       	<h1 >Add Deal</h1>
@@ -30,7 +30,7 @@
           <%= f.input :image, label: 'Deal Image' %>
         </div>
           <%= f.submit 'Create Deal',class: "btn btn-success col-md-8" %>
-          <%= link_to 'Back', home_index_path , class: "btn btn-info col-md-8"%>
+          <%= link_to 'Back', deal_index_path , class: "btn btn-info col-md-8"%>
       </div>
       </div>
 <% end %>

@@ -1,4 +1,4 @@
-<%= form_for(@deal,url: {controller: "home", action: "create"}) do |f| %>
+<%= form_for(@deal,url: {controller: "deal", action: "create"}) do |f| %>
    <% if @deal.errors.any? %>
       <div id="error_explanation">
           <h2><%= pluralize(@deals.errors.count, "error") %> prohibited this deal from being saved:</h2>
@@ -8,7 +8,7 @@
           <% end %>
         </ul>
       </div>
-   <% end %>       
+   <% end %>
     <div class="row">
       <div class="small-3 columns">
         <%= f.label :recipe_name, class: "right inline" %>
@@ -72,9 +72,9 @@
       <div class="small-9 columns">
         <%= f.text_field :available_coupons %>
       </div>
-    </div> 
-    <div class="row ">     
+    </div>
+    <div class="row ">
         <%= f.submit 'Create Deal',class: "btn btn-success col-md-8" %>
-        <%= link_to 'Back', home_index_path , class: "btn btn-info col-md-8"%>
-    </div> 
+        <%= link_to 'Back', deal_index_path , class: "btn btn-info col-md-8"%>
+    </div>
 <% end %>

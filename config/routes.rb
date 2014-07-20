@@ -1,12 +1,12 @@
 TodaysFoodDeals::Application.routes.draw do
   devise_for :users
-  root to: "home#index"
+  root to: "deal#index"
   get 'about', :to => 'about#about', :as => 'about'
   get 'contact', :to => 'about#contact', :as => 'contact'
   get 'terms', :to => 'about#terms', :as => 'terms'
-  #get 'index', :to => 'home#index', :as => 'index'
+  #get 'index', :to => 'deal#index', :as => 'index'
 
-  resources :home, only: [:index, :show, :new, :create]
+  resources :deal, only: [:index, :show, :new, :create]
   resources :eatery, only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.

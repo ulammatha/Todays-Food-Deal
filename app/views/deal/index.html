@@ -15,7 +15,7 @@
                                 </ul>
                                 <div class="unit">
                                     <p> Search with deal name or restaurant name</p>
-                                    <%= form_tag home_index_path, method: :get do %>
+                                    <%= form_tag deal_index_path, method: :get do %>
                                     <div class="field">
                                     <%= text_field_tag :search, params[:search] %>
                                     <%= submit_tag "Deal Search", name: nil, class: "btn btn-success" %>
@@ -71,11 +71,11 @@
                                             <% @deals.each do |deal| %>
                                                 <li class="span3">
                                                     <div class="thumbnail unit-bg">
-                                                            <%=link_to image_tag(deal.image.url(),size: "300x140"),home_path(deal) %>
+                                                            <%=link_to image_tag(deal.image.url(),size: "300x140"),deal_path(deal) %>
                                                         <div class="caption">
                                                             <h2><%= deal.recipe_name %></h2>
                                                             <p>
-                                                                <%= link_to 'View', home_path(deal) , class: "btn btn-success"%>
+                                                                <%= link_to 'View', deal_path(deal) , class: "btn btn-success"%>
                                                                     <span class="help-inline text-highlight-small">
                                                                         $<%=deal.current_amount %></span> <span class="help-inline text-strike">$<%=deal.previous_amount %> </span>
                                                             </p>

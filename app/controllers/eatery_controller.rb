@@ -5,7 +5,7 @@ class EateryController < ApplicationController
     user = User.find(current_user.id) if current_user.present?
     reg_restaurant = Eatery.where(user_id: user.id).first if user.present?
     if user.present? && reg_restaurant.present?
-      redirect_to new_home_path
+      redirect_to new_deal_path
     else
     @eatery= Eatery.new
     end
@@ -15,7 +15,7 @@ class EateryController < ApplicationController
    @eatery = Eatery.new(eatery_params)
    @eatery.user_id = current_user.id
     if @eatery.save
-      redirect_to new_home_path
+      redirect_to new_deal_path
     else
       redirect_to eatery_index_path
     end
