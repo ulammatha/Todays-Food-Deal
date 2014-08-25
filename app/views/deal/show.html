@@ -14,11 +14,10 @@
                 <div class="thumbnail unit-bg" >
                   <ul class="unstyled">
                     <li><span class="text-highlight-large">$<%=@deal.current_amount %></span></li>
-                    <li>
-                     <button type="submit" class="btn btn-large btn-success">
-                      BUY NOW&nbsp;<i class="icon-shopping-cart icon-white"></i></button>
-                    </li>
-                    <li>&nbsp;</li>
+                      <li>
+                       <%= link_to 'BUY NOW', '#' , class: "btn btn-info col-md-8"%>
+                      <li>&nbsp;
+                      </li>
                     <li>
                     <table class="table">
                      <tr class="firstrow">

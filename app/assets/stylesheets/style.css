@@ -1,4 +1,4 @@
-﻿/* 
+﻿/*
 * Theme Author: cristoforo
 * Theme Name: Dealstrap
 * Version: 1.1
@@ -166,14 +166,14 @@ ul.socialicons li a:hover {
 ********************************************************/
 /* Desktop large
 ------------------------- */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 	.page-content .span6 { width: 530px }
 	.page-content .span3 { width: 272px }
 	.view-deal { margin-right: 4px }
 }
 /* Tablet to desktop
 ------------------------- */
-@media (min-width: 768px) and (max-width: 1200px) { 
+@media (min-width: 768px) and (max-width: 1200px) {
 	.page-content .span6 { width: 420px }
 	.page-content .span3 { width: 222px }
 	.view-deal {
@@ -184,7 +184,7 @@ ul.socialicons li a:hover {
 }
 /* Tablet
 ------------------------- */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 	.login-input { width: 100% }
 	.view-deal { margin-right: 4px }
 	.footer { text-align: center }
@@ -192,4 +192,17 @@ ul.socialicons li a:hover {
 	    float: none;
 	    margin-bottom: 10px;
 	}
+}
+.other-color{
+    background: #eee   //#777
+  }
+  .jumborton-bg{
+    background: white
+  }
+
+.verticalLine {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
 }
