@@ -1,9 +1,10 @@
+# EateryController - lists deals from various restaurants and can create new deals.
 class EateryController < ApplicationController
   before_action :authenticate_user! , only:[:new,:create]
 
   def new
-    user = User.find(current_user.id) if current_user.present?
-    reg_restaurant = Eatery.where(user_id: user.id).first if user.present?
+    user = User.find(current_user.id) if current_user
+    reg_restaurant = Eatery.where(user_id: user.id).first if user
     if user.present? && reg_restaurant.present?
       redirect_to new_deal_path
     else

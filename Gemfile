@@ -22,11 +22,15 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 
 gem 'thinking-sphinx'
 
-gem 'pry'
+gem 'pry-byebug'
 
 gem 'simple_form', '~> 3.0.2'
 
 gem 'devise','~> 3.2.4'
+
+# Reek is a tool that examines Ruby classes, modules and methods and reports any code smells it finds
+gem 'reek', '~> 1.3.8'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -36,5 +40,6 @@ end
 
 group  :development do
   gem 'rack-mini-profiler'
+  gem 'railroady'
 end
 

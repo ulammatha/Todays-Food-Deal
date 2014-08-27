@@ -13,14 +13,10 @@
 <body class ="other-color">
     <%= render 'layouts/left_top_nav' %>
     <div class="container">
-      <!-- <div class="row"> -->
         <div class="span9">
-            <% flash.each do |name, msg| %>
-            <%= content_tag(:div, msg, class: "alert alert-error") %>
-            <% end %>
+          <%= render partial: "layouts/flash", locals: { flash: flash } %>
             <%= yield %>
         </div>
-      <!-- </div> -->
     </div>
     <%= render 'layouts/footer' %>
 </body>

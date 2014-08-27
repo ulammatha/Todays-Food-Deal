@@ -20,7 +20,7 @@ class DealController < ApplicationController
 
      redirect_to action: 'index', notice: 'deal was successfully added.'
     else
-      redirect_to new_deal_url
+      render :new
     end
   end
 
