@@ -1,13 +1,16 @@
 <div class="modal fade", id="signup_id">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Modal title</h4>
+        <h4 class="modal-title">Sign Up</h4>
       </div>
       <div class="modal-body">
-        <p>One fine body</p>
+        <p><ul>Save time by using your Facebook or Twitter account to sign up.</ul>
+        <ul>We'll only import your photo, location. We never post unless you ask us to.</ul></p>
+        <%= link_to("Facebook",'#', class: "btn btn-primary") %>
+        <%= link_to("Twitter",'#', class: "btn btn-info") %>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-       <%= link_to("Signup",new_user_registration_path, class: "btn btn-success",data: {dismiss: "modal", remote: true}, aria: {hidden: "true"}) %>
+        <%= link_to("Close",'#', class: "btn btn-warning", data: {dismiss: "modal"}) %>
+       <%= link_to("Create an Account",new_user_registration_path, class: "btn btn-success",data: {dismiss: "modal", remote: true}, aria: {hidden: "true"}) %>
       </div>
-</div><!-- /.modal -->
+</div>
