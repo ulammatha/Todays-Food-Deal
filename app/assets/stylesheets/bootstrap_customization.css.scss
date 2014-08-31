@@ -7,7 +7,7 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
-
+@import "bootstrap";
 article,
 aside,
 details,
@@ -218,6 +218,11 @@ a:hover {
   margin-left: 20px;
 }
 
+[class*="span-center"] {
+  float: left;
+  margin-left: 100px;
+  // margin-right: 50px;
+}
 .container,
 .navbar-static-top .container,
 .navbar-fixed-top .container,
@@ -225,53 +230,7 @@ a:hover {
   width: 940px;
 }
 
-.span12 {
-  width: 940px;
-}
 
-.span11 {
-  width: 860px;
-}
-
-.span10 {
-  width: 780px;
-}
-
-.span9 {
-  width: 700px;
-}
-
-.span8 {
-  width: 620px;
-}
-
-.span7 {
-  width: 540px;
-}
-
-.span6 {
-  width: 460px;
-}
-
-.span5 {
-  width: 380px;
-}
-
-.span4 {
-  width: 300px;
-}
-
-.span3 {
-  width: 220px;
-}
-
-.span2 {
-  width: 140px;
-}
-
-.span1 {
-  width: 60px;
-}
 
 .offset12 {
   margin-left: 980px;
@@ -898,7 +857,7 @@ input,
 button,
 select,
 textarea {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 20px;
 }
@@ -931,17 +890,18 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"],
+
 .uneditable-input {
-  display: inline-block;
-  height: 20px;
-  padding: 4px 6px;
+   // display: inline-block;
+  // height: 20px;
+  // padding: 4px 6px;
   margin-bottom: 9px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #555555;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
+  // font-size: 14px;
+  // line-height: 20px;
+  // color: #555555;
+  // -webkit-border-radius: 3px;
+  //    -moz-border-radius: 3px;
+  //         border-radius: 3px;
 }
 
 input,

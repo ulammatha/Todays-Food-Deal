@@ -12,12 +12,10 @@
 </head>
 <body class ="other-color">
     <%= render 'layouts/left_top_nav' %>
-    <div class="container">
         <div class="span9">
           <%= render partial: "layouts/flash", locals: { flash: flash } %>
             <%= yield %>
         </div>
-    </div>
     <%= render 'layouts/footer' %>
 </body>
 </html>

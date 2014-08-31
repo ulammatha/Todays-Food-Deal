@@ -28,6 +28,8 @@ gem 'simple_form', '~> 3.0.2'
 
 gem 'devise','~> 3.2.4'
 
+gem 'jquery-ui-rails', '~> 4.2.1'
+
 # Reek is a tool that examines Ruby classes, modules and methods and reports any code smells it finds
 gem 'reek', '~> 1.3.8'
 

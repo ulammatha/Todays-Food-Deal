@@ -13,7 +13,7 @@ class Eatery < ActiveRecord::Base
   validates :eatery_name, presence: true
   validates :eatery_description, presence: true
   validates :eatery_contact, presence: true
-  validates :eatery_email, presence: true #:numericality => {:greater_than => 0}, :format => { :with => /\A\d+??(?:\.\d{0,2})?\Z/ }
+  validates :eatery_email, presence: true,:format => { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, on: :create }
   validates :eatery_address, presence: true
   validates :image, presence: true
 

@@ -16,9 +16,9 @@ class EateryController < ApplicationController
    @eatery = Eatery.new(eatery_params)
    @eatery.user_id = current_user.id
     if @eatery.save
-      redirect_to new_deal_path
+      redirect_to new_deal_path, flash:{success: "Registered Successfully", notice: "Now you can add deals"}
     else
-      redirect_to eatery_index_path
+      render :new
     end
   end
 

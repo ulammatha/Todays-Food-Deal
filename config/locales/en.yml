@@ -20,4 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    errors:
+      models:
+        deal:
+          attributes:
+            current_amount:
+              error_message: 'Current Amount should be greater than Zero'
+            previous_amount:
+              error_message: 'Previous Amount should be greater than Zero'
