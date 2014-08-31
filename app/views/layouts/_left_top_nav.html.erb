@@ -6,8 +6,9 @@
             <%=link_to "SignOut",destroy_user_session_path,method: :delete,class:"btn btn-warning btn-lg" %>
             <% else %>
                 <div class="login-input pull-left">
-                    <%= link_to "SignIn", new_user_session_path, class: "btn btn-primary" %>
-                    <%= link_to("SignUp",'#', class: "btn btn-success", data: { toggle: "modal", target: "signup_id"}) %>
+                    <%= link_to "SignIn",new_user_session_path, class: "btn btn-primary" %>
+                    <%= link_to("SignUp",'#', class: "btn btn-success", data: { toggle: "modal", target: "#signup_id"}) %>
+                    <%= render template: 'shared/signup_modal', locals: { access: "signup_id"} %>
                 </div>
             <% end %>
             </ul>
