@@ -5,9 +5,8 @@ class Deal < ActiveRecord::Base
   :tiny => "25x25#",
   :thumbnail => "100x100#",
   :small  => "150x150>",
-  :default_url => "/images/logo.png"
+  :default_url => "/images/logo.png",
   :medium => "300x300>" }
-  # :default_url => "/images/logo.png"
   do_not_validate_attachment_file_type :image
   validates :recipe_name, presence: true
   validates :description, presence: true
