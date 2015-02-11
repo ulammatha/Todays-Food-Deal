@@ -33,6 +33,7 @@ gem 'jquery-ui-rails', '~> 4.2.1'
 # Reek is a tool that examines Ruby classes, modules and methods and reports any code smells it finds
 gem 'reek', '~> 1.3.8'
 
+gem 'haml'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

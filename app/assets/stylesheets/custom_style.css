@@ -278,3 +278,9 @@ ul.socialicons li a:hover {
 .span1 {
   width: 60px;
 }
+
+.login-form-divider {
+    width: 5.625rem;
+    height: 1px;
+    margin: 1.25rem auto;
+    background: #ddd; }

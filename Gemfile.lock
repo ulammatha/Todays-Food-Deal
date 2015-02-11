@@ -65,6 +65,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    haml (4.0.5)
+      tilt
     hike (1.2.3)
     i18n (0.6.9)
     innertube (1.1.0)
@@ -183,6 +185,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.2.0.1)
   coffee-rails (~> 4.0.0)
   devise (~> 3.2.4)
+  haml
   jbuilder (~> 1.2)
   jquery-rails
   jquery-ui-rails (~> 4.2.1)

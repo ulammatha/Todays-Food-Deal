@@ -6,7 +6,10 @@ class DealController < ApplicationController
 
   def show
     @deal= Deal.find(params[:id])
-
+    #respond_to do |format|
+      #format.html {send_data "text"}
+      #format.csv { send_data '<p> no file </p>'}
+    #end
   end
 
   def new

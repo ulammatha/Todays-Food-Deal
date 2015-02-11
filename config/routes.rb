@@ -8,6 +8,7 @@ TodaysFoodDeals::Application.routes.draw do
 
   resources :deal, only: [:index, :show, :new, :create]
   resources :eatery, only: [:new, :create]
+  resources :left_navigation
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

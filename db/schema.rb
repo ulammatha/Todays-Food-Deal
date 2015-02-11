@@ -52,20 +52,6 @@ ActiveRecord::Schema.define(version: 20140706223256) do
     t.integer  "user_id"
   end
 
-  create_table "piggybak_coupons_coupon_applications", force: true do |t|
-    t.integer "line_item_id"
-    t.integer "coupon_id"
-  end
-
-  create_table "piggybak_coupons_coupons", force: true do |t|
-    t.string  "code",                                          null: false
-    t.decimal "amount",               precision: 10, scale: 2, null: false
-    t.string  "discount_type",                                 null: false
-    t.decimal "min_cart_total",       precision: 10, scale: 2, null: false
-    t.date    "expiration_date"
-    t.integer "allowed_applications"
-  end
-
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
