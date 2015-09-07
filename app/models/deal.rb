@@ -1,4 +1,5 @@
 class Deal < ActiveRecord::Base
+  searchkick
   belongs_to :eatery
   has_attached_file :image,
   :styles => {
@@ -12,7 +13,6 @@ class Deal < ActiveRecord::Base
   validates :description, presence: true
   validates :current_amount, :numericality => {:greater_than => 0, message: :error_message}, :format => { :with => /\A\d+??(?:\.\d{0,2})?\Z/ }
   validates :previous_amount, :numericality => {:greater_than => 0, message: :error_message}, :format => { :with => /\A\d+??(?:\.\d{0,2})?\Z/ }
-  validates :discount, presence: true , numericality: true
   validates :expiry, presence: true
   # validates :coupon_code, presence: true
   validates :available_coupons, presence: true, numericality: true

@@ -1,7 +1,9 @@
 class DealController < ApplicationController
   #
   def index
-    @deals=Deal.search(params[:search])
+    #searchkick
+    @deals=Deal.all
+
   end
 
   def show
@@ -33,9 +35,14 @@ class DealController < ApplicationController
   def deals
   end
 
-    def deal_params
-        params.require(:deal).permit(:recipe_name, :description, :current_amount, :discount, :previous_amount, :expiry,:coupon_code,
-          :available_coupons, :image)
-    end
+  def search
+    @deals=Deal.search params[:search]
+    render :index
+  end
+
+  def deal_params
+      params.require(:deal).permit(:recipe_name, :description, :current_amount, :previous_amount, :expiry,:coupon_code,
+        :available_coupons, :image)
+  end
 
 end

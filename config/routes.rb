@@ -6,7 +6,11 @@ TodaysFoodDeals::Application.routes.draw do
   get 'terms', :to => 'about#terms', :as => 'terms'
   #get 'index', :to => 'deal#index', :as => 'index'
 
-  resources :deal, only: [:index, :show, :new, :create]
+  resources :deal, only: [:index, :show, :new, :create] do
+    collection do
+      get 'search'
+    end
+  end
   resources :eatery, only: [:new, :create]
   resources :left_navigation
 

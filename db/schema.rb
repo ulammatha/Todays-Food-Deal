@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140706223256) do
+ActiveRecord::Schema.define(version: 20150907194959) do
 
   create_table "deals", force: true do |t|
     t.integer  "rank"
@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 20140706223256) do
     t.string   "description"
     t.decimal  "current_amount",     precision: 8, scale: 2
     t.decimal  "previous_amount",    precision: 8, scale: 2
-    t.decimal  "discount",           precision: 8, scale: 2
     t.datetime "expiry"
     t.string   "coupon_code"
     t.integer  "available_coupons"

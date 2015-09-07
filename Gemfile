@@ -20,8 +20,6 @@ gem 'bootstrap-sass', '~> 3.2.0.1'
 
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
-gem 'thinking-sphinx'
-
 gem 'pry-byebug'
 
 gem 'simple_form', '~> 3.0.2'
@@ -34,6 +32,8 @@ gem 'jquery-ui-rails', '~> 4.2.1'
 gem 'reek', '~> 1.3.8'
 
 gem 'haml'
+
+gem 'searchkick', '~> 0.8.7'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
