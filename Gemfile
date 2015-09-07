@@ -35,14 +35,18 @@ gem 'haml'
 
 gem 'searchkick', '~> 0.8.7'
 
+gem 'stripe', '~> 1.25.0'
+
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
 
-group  :development do
+group  :development, :test do
   gem 'rack-mini-profiler'
   gem 'railroady'
+  gem 'dotenv-rails'
 end
 
