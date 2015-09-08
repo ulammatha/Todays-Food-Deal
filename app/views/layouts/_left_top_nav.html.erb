@@ -19,18 +19,13 @@
         <div class="row-span3">
             <div class="span3">
                 <div class="well unit-bg">
-                    <a href="list.html">
-                        <img src="assets/app/img/logo.png" alt="logo" width="100%"></a>
+                    <%= link_to "Home",root_path %>
+                        <img src="deal2.png" alt="logo" width="100%"></a>
                 </div>
                 <div class="well unit-bg">
                     <ul class="nav nav-list">
-                        <li class="active"><a href="list.html"><i class="icon-asterisk"></i>&nbsp;Today's Deal</a></li>
-                        <li><a href="list.html"><i class="icon-headphones"></i>&nbsp;Products</a></li>
-                        <li><a href="list.html"><i class="icon-briefcase"></i>&nbsp;Escapes</a></li>
-                        <li><a href="list.html"><i class="icon-tag"></i>&nbsp;Past Deals</a></li>
-                        <li><a href="#"><i class="icon-comment"></i>&nbsp;Discussion</a></li>
-                        <li class="divider"></li>
-                        <li><a href="contact.html"><i class="icon-question-sign"></i>&nbsp;Help</a></li>
+                        <li><%= link_to "Purchased deals",purchased_index_path %></li>
+                        <li><%= link_to "My Profile","#" %></li>
                     </ul>
                 </div>
                 <div class="well unit-bg">

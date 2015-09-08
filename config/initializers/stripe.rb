@@ -5,3 +5,4 @@ Rails.configuration.stripe = {
 }
 
 Stripe.api_key = Rails.configuration.stripe[:secret_key]
+# 4242 4242 4242 4242

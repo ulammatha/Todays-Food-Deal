@@ -1,7 +1,4 @@
-﻿<head>
-    <title>Relax Spa and Beauty | Dealstrap</title>
-</head>
-<body>
+﻿<body>
   <div class="row unit-block">
     <div class="span9 unit-bg">
       <div class="unit">
@@ -15,7 +12,15 @@
                   <ul class="unstyled">
                     <li><span class="text-highlight-large">$<%=@deal.current_amount %></span></li>
                       <li>
-                       <%= link_to 'BUY NOW', '#' , class: "btn btn-info col-md-8"%>
+                       <%= form_tag charges_path do %>
+                          <%= hidden_field_tag 'stripeAmount', @deal.current_amount%>
+                          <%= hidden_field_tag 'deal_id', @deal.id%>
+                          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                            data-description="A month's subscription"
+                            data-amount="<%= @deal.current_amount * 100 %>"
+                            data-locale="auto"></script>
+                        <% end %>
                       <li>&nbsp;
                       </li>
                     <li>
