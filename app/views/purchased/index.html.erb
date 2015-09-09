@@ -7,7 +7,7 @@
     </tr>
     <% @payments.each do |payment| %>
       <tr>
-        <td> <%= payment.deal.recipe_name %></td>
+        <td> <%= payment.deal.name %></td>
         <td><%= payment.updated_at.to_formatted_s(:long) %></td>
         <td><%= payment.deal.current_amount %></td>
       </tr>

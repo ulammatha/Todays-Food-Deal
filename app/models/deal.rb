@@ -9,13 +9,18 @@ class Deal < ActiveRecord::Base
   :default_url => "/images/logo.png",
   :medium => "300x300>" }
   do_not_validate_attachment_file_type :image
-  validates :recipe_name, presence: true
+  validates :name, presence: true
   validates :description, presence: true
   validates :current_amount, :numericality => {:greater_than => 0, message: :error_message}, :format => { :with => /\A\d+??(?:\.\d{0,2})?\Z/ }
   validates :previous_amount, :numericality => {:greater_than => 0, message: :error_message}, :format => { :with => /\A\d+??(?:\.\d{0,2})?\Z/ }
   validates :expiry, presence: true
-  # validates :coupon_code, presence: true
   validates :available_coupons, presence: true, numericality: true
   validates :image, presence: true
+  validates :eatery_id, presence: true
+  validate :something
 
+  def something
+    eatery = Eatery.find_by(id: self.eatery_id)
+    errors.add(:eatery_id, "invalid resturant slection") if eatery.nil?
+  end
 end

@@ -1,4 +1,8 @@
 class DealController < ApplicationController
+  before_action :authenticate_user! , only:[:index, :new,:create, :edit, :update]
+  before_action do
+    redirect_to :root_path unless current_user && current_user.is_vendor?
+  end
   #
   def index
     #searchkick
@@ -15,25 +19,26 @@ class DealController < ApplicationController
   end
 
   def new
+    @eateries = current_user.eateries
     @deal= Deal.new
   end
 
   def create
-
-   @deal = Deal.new(deal_params)
+    @deal = Deal.new(deal_params)
     if @deal.save
-
-     redirect_to action: 'index', notice: 'deal was successfully added.'
+      flash[:success] = 'deal was successfully added.'
+      redirect_to action: 'index'
     else
+      @eateries = current_user.eateries
       render :new
     end
   end
 
-  def edit
-  end
+  # def edit
+  # end
 
-  def deals
-  end
+  # def deals
+  # end
 
   def search
     @deals=Deal.search params[:search]
@@ -41,8 +46,8 @@ class DealController < ApplicationController
   end
 
   def deal_params
-      params.require(:deal).permit(:recipe_name, :description, :current_amount, :previous_amount, :expiry,:coupon_code,
-        :available_coupons, :image)
+    params.require(:deal).permit(:name, :description, :current_amount, :previous_amount, :expiry,:coupon_code,
+      :available_coupons, :image, :eatery_id)
   end
 
 end

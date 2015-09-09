@@ -11,7 +11,6 @@
                                     <li><a href="list.html">Future Deals</a></li>
                                     <li><a href="list.html">Past Deals</a></li>
                                     <li><a href="list.html">Reviews</a></li>
-                                    <li><%=link_to 'Add Restaurant', new_eatery_path %>
                                 </ul>
                                 <div class="unit">
                                     <p> Search with deal name or restaurant name</p>
@@ -73,7 +72,7 @@
                                                     <div class="thumbnail unit-bg">
                                                             <%=link_to image_tag(deal.image.url(),size: "300x140"),deal_path(deal) %>
                                                         <div class="caption">
-                                                            <h2><%= deal.recipe_name %></h2>
+                                                            <h2><%= deal.name %></h2>
                                                             <p>
                                                                 <%= link_to 'View', deal_path(deal) , class: "btn btn-success"%>
                                                                     <span class="help-inline text-highlight-small">

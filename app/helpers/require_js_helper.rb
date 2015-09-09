@@ -27,7 +27,6 @@ module RequireJsHelper
   # @example Require several javascript modules
   #   require_js("application", "course_list", "notification")
   def require_js(*dependencies)
-    binding.pry
     @require_js_dependencies ||= []
     @require_js_dependencies += dependencies
     nil

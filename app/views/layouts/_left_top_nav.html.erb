@@ -22,33 +22,46 @@
                     <%= link_to "Home",root_path %>
                         <img src="deal2.png" alt="logo" width="100%"></a>
                 </div>
-                <div class="well unit-bg">
-                    <ul class="nav nav-list">
-                        <li><%= link_to "Purchased deals",purchased_index_path %></li>
-                        <li><%= link_to "My Profile","#" %></li>
-                    </ul>
-                </div>
-                <div class="well unit-bg">
-                    <p>
-                        <i class="icon-envelope"></i>&nbsp;Get Deal Alerts</p>
-                    <div class="input-append">
-                        <input class="span2" id="inputEmail" type="text" placeholder="Enter your email">
-                        <button class="btn" type="button">
-                            OK</button>
-                    </div>
-                </div>
                <% if current_user %>
+                  <% if current_user.is_vendor %>
                     <div class="well unit-bg">
-                        <p>
-                        <i class="icon-heart"></i>&nbsp;Follow Us</p>
-                        <ul class="unstyled social">
-                            <li>
-                                <div class="fb-like-box" data-href="https://www.facebook.com/dealstomeals/likes"
-                                    data-width="180" data-show-faces="false" data-stream="false" data-header="false" >
-                                </div>
-                            </li>
+                        <ul class="nav nav-list">
+                            <li><%= link_to "My Resturants",eatery_index_path %></li>
+                            <li><%= link_to "My deals", vendor_deal_index_path%></li>
                         </ul>
                     </div>
+                    <div class="well unit-bg">
+                        <ul class="nav nav-list">
+                            <li><%= link_to "Add Resturant",new_eatery_path %></li>
+                            <li><%= link_to "Add Deal",new_deal_path %></li>
+                        </ul>
+                    </div>
+                  <% else %>
+                    <div class="well unit-bg">
+                      <ul class="nav nav-list">
+                          <li><%= link_to "Purchased deals",purchased_index_path %></li>
+                          <li><%= link_to "My Profile","#" %></li>
+                      </ul>
+                      <p>
+                          <i class="icon-envelope"></i>&nbsp;Get Deal Alerts</p>
+                      <div class="input-append">
+                          <input class="span2" id="inputEmail" type="text" placeholder="Enter your email">
+                          <button class="btn" type="button">
+                              OK</button>
+                        </div>
+                    </div>
+                  <% end %>
+                  <div class="well unit-bg">
+                    <p>
+                    <i class="icon-heart"></i>&nbsp;Follow Us</p>
+                    <ul class="unstyled social">
+                        <li>
+                            <div class="fb-like-box" data-href="https://www.facebook.com/dealstomeals/likes"
+                                data-width="180" data-show-faces="false" data-stream="false" data-header="false" >
+                            </div>
+                        </li>
+                    </ul>
+                  </div>
                <% end %>
             </div>
         </div>

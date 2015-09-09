@@ -1,16 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 
+  id:
   rank: 1
-  recipe_name: MyString
+  name: MyString
   description: MyString
-  current_amount: 
-  current_amount: 
-  previous_amount: 
-  previous_amount: 
-  discount: 
-  discount: 
+  current_amount:
+  current_amount:
+  previous_amount:
+  previous_amount:
+  discount:
+  discount:
   expiry: 2014-05-05 14:13:18
   coupon_code: MyString
   available_coupons: 1
@@ -20,16 +20,16 @@ one:
   updated_at: 2014-05-05 14:13:18
 
 two:
-  id: 
+  id:
   rank: 1
-  recipe_name: MyString
+  name: MyString
   description: MyString
-  current_amount: 
-  current_amount: 
-  previous_amount: 
-  previous_amount: 
-  discount: 
-  discount: 
+  current_amount:
+  current_amount:
+  previous_amount:
+  previous_amount:
+  discount:
+  discount:
   expiry: 2014-05-05 14:13:18
   coupon_code: MyString
   available_coupons: 1
