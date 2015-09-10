@@ -6,13 +6,8 @@ one:
   name: MyString
   description: MyString
   current_amount:
-  current_amount:
   previous_amount:
-  previous_amount:
-  discount:
-  discount:
   expiry: 2014-05-05 14:13:18
-  coupon_code: MyString
   available_coupons: 1
   sold_coupons: 1
   rid: 1
@@ -25,13 +20,8 @@ two:
   name: MyString
   description: MyString
   current_amount:
-  current_amount:
   previous_amount:
-  previous_amount:
-  discount:
-  discount:
   expiry: 2014-05-05 14:13:18
-  coupon_code: MyString
   available_coupons: 1
   sold_coupons: 1
   rid: 1

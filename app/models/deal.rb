@@ -1,6 +1,7 @@
 class Deal < ActiveRecord::Base
   searchkick
   belongs_to :eatery
+  has_many :coupons
   has_attached_file :image,
   :styles => {
   :tiny => "25x25#",
@@ -17,9 +18,9 @@ class Deal < ActiveRecord::Base
   validates :available_coupons, presence: true, numericality: true
   validates :image, presence: true
   validates :eatery_id, presence: true
-  validate :something
+  validate :find_restaurant
 
-  def something
+  def find_restaurant
     eatery = Eatery.find_by(id: self.eatery_id)
     errors.add(:eatery_id, "invalid resturant slection") if eatery.nil?
   end
