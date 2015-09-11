@@ -21,9 +21,8 @@ def create
   payment = Payment.new(payment_params)
 
   if payment.save
-    coupon = CouponGeneration.new(current_user.id, deal_id)
-    generated_coupon = coupon.create_coupon
-    flash[:success] = "your payment $#{amount/100} has been successfully processed and coupon_code is: #{generated_coupon.code}"
+    coupon = CouponGeneration.new(current_user.id, deal_id).create_coupon
+    flash[:success] = "your payment $#{amount/100} has been successfully processed and coupon_code is: #{coupon.code}"
     redirect_to "/"
   end
 
