@@ -15,7 +15,7 @@ TodaysFoodDeals::Application.routes.draw do
 
   end
   resources :left_navigation
-  resources :charges, only: [:new, :create]
+  resources :charges, only: [:create]
   resources :purchased, only: [:index]
   resources :vendor_deal, only: [:index]
 

@@ -1,13 +1,10 @@
 class ChargesController < ApplicationController
 
-
-def new
-end
-
 def create
   # Amount in cents
-  amount = params[:stripeAmount].to_i * 100
+  amount = params[:payment][:amount].to_i * 100
   email = params[:stripeEmail]
+  deal_id = params[:payment][:deal_id]
   customer = Stripe::Customer.create(
     :email => email,
     :card  => params[:stripeToken]
@@ -19,11 +16,16 @@ def create
     :description => 'Rails Stripe customer',
     :currency    => 'usd'
   )
+  params[:payment][:stripe_token] = params[:stripeToken]
+  params[:payment][:transaction_status] = charge.status
+  payment = Payment.new(payment_params)
 
-  payment_create(charge.status)
-
-  flash[:success] = "your payment $#{amount/100} has been successfully processed"
-  redirect_to "/"
+  if payment.save
+    coupon = CouponGeneration.new(current_user.id, deal_id)
+    generated_coupon = coupon.create_coupon
+    flash[:success] = "your payment $#{amount/100} has been successfully processed and coupon_code is: #{generated_coupon.code}"
+    redirect_to "/"
+  end
 
 rescue Stripe::CardError => e
   flash[:error] = e.message
@@ -33,12 +35,6 @@ end
 
 private
 
-def payment_create(charge_status)
-  payment = Payment.create(
-    user_id: current_user.id,
-    deal_id: params[:deal_id],
-    stripe_token: params[:stripeToken],
-    transaction_status: charge_status
-    )
-  payment.save!
+def payment_params
+  params.require(:payment).permit(:user_id, :deal_id, :amount, :stripe_token, :transaction_status)
 end
