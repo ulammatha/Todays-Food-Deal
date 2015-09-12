@@ -6,18 +6,14 @@ TodaysFoodDeals::Application.routes.draw do
   get 'terms', :to => 'about#terms', :as => 'terms'
   #get 'index', :to => 'deal#index', :as => 'index'
 
-  resources :deal, only: [:index, :show, :new, :create] do
-    collection do
-      get 'search'
-    end
-  end
+  resources :deal, only: [:index, :show]
   resources :eatery, only: [:index, :new, :create, :edit, :update] do
 
   end
   resources :left_navigation
   resources :charges, only: [:create]
   resources :purchased, only: [:index]
-  resources :vendor_deal, only: [:index]
+  resources :vendor_deal, only: [:index, :new, :create, :edit, :update]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

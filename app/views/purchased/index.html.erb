@@ -1,16 +1,26 @@
 <% if @payments.present? %>
+
   <table class="table table-striped">
     <tr>
       <th>Deal Name</th>
       <th>Date Purchased</th>
       <th>Amount</th>
+      <th>Coupon Code </th>
     </tr>
     <% @payments.each do |payment| %>
       <tr>
         <td> <%= payment.deal.name %></td>
         <td><%= payment.updated_at.to_formatted_s(:long) %></td>
         <td><%= payment.deal.current_amount %></td>
+        <td><%= payment.coupon.code%> </td>
       </tr>
     <% end %>
   </table>
+<% else %>
+  <div class="panel panel-warning">
+    <div class="panel-body">
+      Payments
+    </div>
+    <div class="panel-footer">No payments found</div>
+  </div>
 <% end %>

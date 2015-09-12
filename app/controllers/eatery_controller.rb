@@ -1,6 +1,12 @@
 # EateryController - lists deals from various restaurants and can create new deals.
 class EateryController < ApplicationController
   before_action :authenticate_user! , only:[:index, :new,:create, :edit, :update]
+  before_action do
+    unless current_user && current_user.is_vendor?
+     flash[:notice] = "no access hence redirect to home page"
+      redirect_to :root
+    end
+  end
 
   def index
     @eateries = current_user.eateries.all

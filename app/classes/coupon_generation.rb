@@ -1,17 +1,19 @@
 class CouponGeneration
-  attr_accessor :user_id, :deal_id, :code
+  attr_accessor :user_id, :deal_id, :code, :payment_id
 
-  def initialize(user_id, deal_id)
+  def initialize(user_id, deal_id, payment_id)
     @user_id = user_id
     @deal_id = deal_id
     @code = generate_coupon
+    @payment_id = payment_id
   end
 
   def create_coupon
     Coupon.create(
       user_id: user_id,
       deal_id: deal_id,
-      code: code
+      code: code,
+      payment_id: payment_id
     )
   end
 
