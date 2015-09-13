@@ -17,3 +17,4 @@
 .DS_Store
 /public/system/deals/images/*
 /public/system/eateries/images/*
+.env
