@@ -33,7 +33,6 @@ class VendorDealController < ApplicationController
   end
 
   def edit
-    @deal = Deal.find(params[:id])
 
   end
 
