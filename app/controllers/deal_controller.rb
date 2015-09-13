@@ -6,7 +6,7 @@ class DealController < ApplicationController
 
   def index
     if params[:search].to_s.strip.length == 0
-      @deals=Deal.all
+      @deals = Deal.all
     else
       @deals = Deal.search params[:search]
     end

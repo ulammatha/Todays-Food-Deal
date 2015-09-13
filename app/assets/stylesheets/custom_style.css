@@ -280,7 +280,20 @@ ul.socialicons li a:hover {
 }
 
 .login-form-divider {
-    width: 5.625rem;
-    height: 1px;
-    margin: 1.25rem auto;
-    background: #ddd; }
+  width: 5.625rem;
+  height: 1px;
+  margin: 1.25rem auto;
+  background: #ddd;
+}
+#sold_coupons {
+  color: #FF0000;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+}
+#remaning_coupons {
+  color: #56BA16;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+}

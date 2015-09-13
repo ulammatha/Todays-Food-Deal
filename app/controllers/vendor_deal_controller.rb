@@ -6,11 +6,15 @@ class VendorDealController < ApplicationController
       redirect_to :root
     end
   end
+  before_action only: :index do
+    helper_method :deal_expiry
+  end
   def index
     eatery_ids = current_user.eateries.pluck(:id)
     @deals = Deal.where(eatery_id: eatery_ids)
     render 'deal/index'
   end
+
 
   def new
     @eateries = current_user.eateries
@@ -29,6 +33,7 @@ class VendorDealController < ApplicationController
   end
 
   def edit
+    @deal = Deal.find(params[:id])
 
   end
 

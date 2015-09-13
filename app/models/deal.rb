@@ -24,4 +24,9 @@ class Deal < ActiveRecord::Base
     eatery = Eatery.find_by(id: self.eatery_id)
     errors.add(:eatery_id, "invalid resturant slection") if eatery.nil?
   end
+
+  # once coupon is generated, updating sold_coupons attribute
+  def update_sold_coupons
+    self.increment!(:sold_coupons)
+  end
 end
