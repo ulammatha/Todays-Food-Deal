@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20150913000312) do
     t.decimal  "previous_amount",    precision: 8, scale: 2
     t.datetime "expiry"
     t.integer  "available_coupons"
+    t.integer  "sold_coupons",                               default: 0
     t.integer  "eatery_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -37,7 +38,6 @@ ActiveRecord::Schema.define(version: 20150913000312) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.integer  "sold_coupons",                               default: 0
   end
 
   add_index "deals", ["eatery_id"], name: "index_deals_on_eatery_id", using: :btree
