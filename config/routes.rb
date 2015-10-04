@@ -14,6 +14,8 @@ TodaysFoodDeals::Application.routes.draw do
   resources :charges, only: [:create]
   resources :purchased, only: [:index]
   resources :vendor_deal, only: [:index, :new, :create, :edit, :update]
+  resources :coupon_redemption, only: [:index, :show, :update] do
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

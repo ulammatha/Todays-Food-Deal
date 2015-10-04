@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150913000312) do
+ActiveRecord::Schema.define(version: 20151003233517) do
 
   create_table "coupons", force: true do |t|
     t.string   "code"
@@ -19,7 +19,8 @@ ActiveRecord::Schema.define(version: 20150913000312) do
     t.integer  "deal_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "payment_id", null: false
+    t.integer  "payment_id",                null: false
+    t.boolean  "status",     default: true
   end
 
   create_table "deals", force: true do |t|
