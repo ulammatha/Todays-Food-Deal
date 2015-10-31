@@ -45,7 +45,7 @@ end
 
 
 group  :development, :test do
-  gem 'rack-mini-profiler'
+  # gem 'rack-mini-profiler'
   gem 'railroady'
   gem 'dotenv-rails'
   gem 'rspec-rails', '~> 3.3.3'

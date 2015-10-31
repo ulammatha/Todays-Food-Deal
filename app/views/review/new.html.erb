@@ -1,0 +1,7 @@
+<%= simple_form_for(@review,url: purchase_review_index_path, method: :post) do |f| %>
+  <%= f.input :deal_id, as: :hidden, input_html: { value: @deal_id } %>
+  <%= f.input :user_id, as: :hidden, input_html: { value: current_user.id } %>
+  <%= f.collection_radio_buttons :rating, [[1,1],[2,2],[3,3],[4,4],[5,5]], :first, :last, {class: 'horizontal_radio_container'} %>
+  <%= f.input :comment, as: :text, placeholder: "comments", label: false, maxlength: 500 %>
+  <%= f.button :submit, "Submit", class: "btn btn-success" %>
+<% end %>

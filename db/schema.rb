@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151003233517) do
+ActiveRecord::Schema.define(version: 20151031195354) do
 
   create_table "coupons", force: true do |t|
     t.string   "code"
@@ -68,6 +68,15 @@ ActiveRecord::Schema.define(version: 20151003233517) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.decimal  "amount",             precision: 8, scale: 2
+  end
+
+  create_table "reviews", force: true do |t|
+    t.integer  "deal_id",    null: false
+    t.integer  "user_id",    null: false
+    t.integer  "rating",     null: false
+    t.text     "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: true do |t|

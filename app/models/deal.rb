@@ -2,6 +2,8 @@ class Deal < ActiveRecord::Base
   searchkick
   belongs_to :eatery
   has_many :coupons
+  has_many :reviews, dependent: :destroy
+
   has_attached_file :image,
   :styles => {
   :tiny => "25x25#",

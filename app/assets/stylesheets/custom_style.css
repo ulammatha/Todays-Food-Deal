@@ -171,31 +171,31 @@ ul.socialicons li a:hover {
 /* Desktop large
 ------------------------- */
 @media (min-width: 1200px) {
-	.page-content .span6 { width: 530px }
-	.page-content .span3 { width: 272px }
-	.view-deal { margin-right: 4px }
+  .page-content .span6 { width: 530px }
+  .page-content .span3 { width: 272px }
+  .view-deal { margin-right: 4px }
 }
 /* Tablet to desktop
 ------------------------- */
 @media (min-width: 768px) and (max-width: 1200px) {
-	.page-content .span6 { width: 420px }
-	.page-content .span3 { width: 222px }
-	.view-deal {
-	    display: block;
-	    margin-bottom: 10px;
-	}
-	.social { margin-bottom: 40px; }
+  .page-content .span6 { width: 420px }
+  .page-content .span3 { width: 222px }
+  .view-deal {
+      display: block;
+      margin-bottom: 10px;
+  }
+  .social { margin-bottom: 40px; }
 }
 /* Tablet
 ------------------------- */
 @media (max-width: 768px) {
-	.login-input { width: 100% }
-	.view-deal { margin-right: 4px }
-	.footer { text-align: center }
-	.footer ul {
-	    float: none;
-	    margin-bottom: 10px;
-	}
+  .login-input { width: 100% }
+  .view-deal { margin-right: 4px }
+  .footer { text-align: center }
+  .footer ul {
+      float: none;
+      margin-bottom: 10px;
+  }
 }
 .other-color{
     background: #eee
@@ -296,4 +296,32 @@ ul.socialicons li a:hover {
   font-weight: bold;
   font-style: italic;
   font-size: 15px;
+}
+
+.always-center {
+  float: auto;
+}
+
+
+.collection_radio_buttons {
+  display: inline;
+  padding-right: 20px;
+  margin-right: 10px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
+.new_review {
+  text-align: center;
+  border: 2px solid gray;
+  padding: 30px;
+  border-radius: 4px;
+  .review_comment {
+    margin-top: 20px;
+    textarea {
+      border-radius: 5px;
+      width: 400px;
+      height: 75px;
+    }
+  }
 }
