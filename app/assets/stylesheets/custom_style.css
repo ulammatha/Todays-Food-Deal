@@ -231,6 +231,10 @@ ul.socialicons li a:hover {
 
 /* Span
 ------------------------- */
+.span13 {
+  width: 1028px;
+}
+
 .span12 {
   width: 940px;
 }
@@ -312,7 +316,7 @@ ul.socialicons li a:hover {
 }
 
 .new_review {
-  text-align: center;
+  text-align: right;
   border: 2px solid gray;
   padding: 30px;
   border-radius: 4px;
@@ -324,4 +328,8 @@ ul.socialicons li a:hover {
       height: 75px;
     }
   }
+}
+
+.unit legend {
+  color: #ffa000;
 }

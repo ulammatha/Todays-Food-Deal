@@ -1,68 +1,26 @@
-<div class="navbar navbar-static-top">
-    <div class="container">
-        <div class="navbar-form well pull-right unit-bg">
-            <ul class="signup nav pull-right">
-            <% if current_user.present? %>
-            <%=link_to "SignOut",destroy_user_session_path,method: :delete,class:"btn btn-warning btn-lg" %>
-            <% else %>
-                <div class="login-input pull-left">
-                    <%= link_to "SignIn",new_user_session_path, class: "btn btn-primary" %>
-                    <%= link_to("SignUp",'#', class: "btn btn-success", data: { toggle: "modal", target: "#signup_id"}) %>
-                    <%= render template: 'shared/signup_modal' %>
-                </div>
-            <% end %>
-            </ul>
-        </div>
+<div class="container">
+  <div class="span12 navbar navbar-static-top">
+    <div class="navbar-form unit-bg">
+      <ul class="signup nav">
+        <li><%=link_to "Home",root_path %></li>
+        <% if current_user.present? %>
+          <% if current_user.is_vendor %>
+            <li><%= link_to "My Resturants",eatery_index_path %>
+            <li><%= link_to "My deals", vendor_deal_index_path%>
+            <li><%= link_to "Add Resturant",new_eatery_path %></li>
+            <li><%= link_to "Add Deal",new_vendor_deal_path %></li>
+          <% else %>
+            <li><%= link_to "Purchased deals",purchase_index_path %></li>
+            <li><%= link_to "My Profile","#" %></li>
+          <%end%>
+          <li><%=link_to "SignOut",destroy_user_session_path,method: :delete %> </li>
+        <% else %>
+          <li> <%= link_to "SignIn",new_user_session_path%></li>
+          <li><%= link_to("SignUp",'#',data: { toggle: "modal", target: "#signup_id"}) %>
+          </li>
+          <%= render template: 'shared/signup_modal' %>
+        <% end %>
+      </ul>
     </div>
- </div>
- <div class="container-span3">
-        <div class="row-span3">
-            <div class="span3">
-                <div class="well unit-bg">
-                    <%= link_to "Home",root_path %>
-                        <img src="deal2.png" alt="logo" width="100%"></a>
-                </div>
-               <% if current_user %>
-                  <% if current_user.is_vendor %>
-                    <div class="well unit-bg">
-                        <ul class="nav nav-list">
-                            <li><%= link_to "My Resturants",eatery_index_path %></li>
-                            <li><%= link_to "My deals", vendor_deal_index_path%></li>
-                        </ul>
-                    </div>
-                    <div class="well unit-bg">
-                        <ul class="nav nav-list">
-                            <li><%= link_to "Add Resturant",new_eatery_path %></li>
-                            <li><%= link_to "Add Deal",new_vendor_deal_path %></li>
-                        </ul>
-                    </div>
-                  <% else %>
-                    <div class="well unit-bg">
-                      <ul class="nav nav-list">
-                          <li><%= link_to "Purchased deals",purchase_index_path %></li>
-                          <li><%= link_to "My Profile","#" %></li>
-                      </ul>
-                      <p>
-                          <i class="icon-envelope"></i>&nbsp;Get Deal Alerts</p>
-                      <div class="input-append">
-                          <input class="span2" id="inputEmail" type="text" placeholder="Enter your email">
-                          <button class="btn" type="button">
-                              OK</button>
-                        </div>
-                    </div>
-                  <% end %>
-                  <div class="well unit-bg">
-                    <p>
-                    <i class="icon-heart"></i>&nbsp;Follow Us</p>
-                    <ul class="unstyled social">
-                        <li>
-                            <div class="fb-like-box" data-href="https://www.facebook.com/dealstomeals/likes"
-                                data-width="180" data-show-faces="false" data-stream="false" data-header="false" >
-                            </div>
-                        </li>
-                    </ul>
-                  </div>
-               <% end %>
-            </div>
-        </div>
+  </div>
 </div>

@@ -12,20 +12,13 @@
 </head>
 <body class ="other-color">
     <%= render 'layouts/left_top_nav' %>
-        <div class="span9">
+        <div class = "container">
           <%= render partial: "layouts/flash", locals: { flash: flash } %>
             <%= yield %>
         </div>
     <%= render 'layouts/footer' %>
 </body>
 </html>
-<script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s);
-            js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=279705068712379";
-            fjs.parentNode.insertBefore(js, fjs);
-        } (document, 'script', 'facebook-jssdk'));
-</script>
 
 
 
