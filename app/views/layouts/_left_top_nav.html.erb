@@ -1,26 +1,24 @@
-<div class="container">
-  <div class="span12 navbar navbar-static-top">
-    <div class="navbar-form unit-bg">
-      <ul class="signup nav">
-        <li><%=link_to "Home",root_path %></li>
-        <% if current_user.present? %>
-          <% if current_user.is_vendor %>
-            <li><%= link_to "My Resturants",eatery_index_path %>
-            <li><%= link_to "My deals", vendor_deal_index_path%>
-            <li><%= link_to "Add Resturant",new_eatery_path %></li>
-            <li><%= link_to "Add Deal",new_vendor_deal_path %></li>
-          <% else %>
-            <li><%= link_to "Purchased deals",purchase_index_path %></li>
-            <li><%= link_to "My Profile","#" %></li>
-          <%end%>
-          <li><%=link_to "SignOut",destroy_user_session_path,method: :delete %> </li>
+<div class="navbar navbar-static-top">
+  <div class="navbar-form unit-bg">
+    <ul class="signup nav">
+      <li><%=link_to "Home",root_path %></li>
+      <% if current_user.present? %>
+        <% if current_user.is_vendor %>
+          <li><%= link_to "My Resturants",eatery_index_path %>
+          <li><%= link_to "My deals", vendor_deal_index_path%>
+          <li><%= link_to "Add Resturant",new_eatery_path %></li>
+          <li><%= link_to "Add Deal",new_vendor_deal_path %></li>
         <% else %>
-          <li> <%= link_to "SignIn",new_user_session_path%></li>
-          <li><%= link_to("SignUp",'#',data: { toggle: "modal", target: "#signup_id"}) %>
-          </li>
-          <%= render template: 'shared/signup_modal' %>
-        <% end %>
-      </ul>
-    </div>
+          <li><%= link_to "Purchased deals",purchase_index_path %></li>
+          <li><%= link_to "My Profile","#" %></li>
+        <%end%>
+        <li><%=link_to "SignOut",destroy_user_session_path,method: :delete %> </li>
+      <% else %>
+        <li> <%= link_to "SignIn",new_user_session_path%></li>
+        <li><%= link_to("SignUp",'#',data: { toggle: "modal", target: "#signup_id"}) %>
+        </li>
+        <%= render template: 'shared/signup_modal' %>
+      <% end %>
+    </ul>
   </div>
 </div>
