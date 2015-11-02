@@ -1,37 +1,7 @@
-<%= simple_form_for(@eatery,url: {controller: "eatery", action: "create"}, html: {class: "container"}) do |f| %>
-    <div class="span-center">
+<%= simple_form_for(@eatery,url: {controller: "eatery", action: "create"}, html: { multipart: true}) do |f| %>
+    <div class="unit jumborton-bg">
     <h2> Add Restaurant </h2>
-    <%= f.input :user_id, as: :hidden, input_html: { value: current_user.id} %>
-    <div class="row">
-      <div class='form-group col-xs-4'>
-        <%= f.input :eatery_name,  input_html: {class: 'form-control'}, label: 'Restaurant Name' %>
-      </div>
-    </div>
-    <div class="row">
-      <div class='form-group col-xs-4'>
-        <%= f.input :eatery_description, as: :text, input_html: {class: 'form-control'}, label: 'Description' %>
-      </div>
-    </div>
-    <div class="row">
-      <div class='form-group col-xs-4'>
-        <%= f.input :eatery_contact, input_html: {class: 'form-control'}, label: 'Restaurant Contact Number' %>
-      </div>
-    </div>
-    <div class="row">
-      <div class='form-group col-xs-4'>
-        <%= f.input :eatery_email, input_html: {class: 'form-control'}, label: 'Restaurant Email' %>
-      </div>
-    </div>
-    <div class="row">
-      <div class='form-group col-xs-4'>
-        <%= f.input :eatery_address, as: :text, input_html: {class: 'form-control'}, label: 'Restaurant Address' %>
-      </div>
-    </div>
-    <div class="row">
-      <div class='form-group col-xs-4'>
-       <%= f.input :image, as: :file,  label: 'Restaurant Image' %>
-      </div>
-    </div>
+    <%= render partial: "eatery", locals: {f: f} %>
     <div class="row">
       <div class='form-group col-xs-2'>
       <%= submit_tag "Register", data: { confirm: "Are you sure you want to submit" }, class: "btn btn-success btn-lg" %>
@@ -40,4 +10,5 @@
       <%= link_to "Cancel",root_url, class:"btn btn-warning btn-lg" %>
       </div>
     </div>
+  </div>
 <% end %>

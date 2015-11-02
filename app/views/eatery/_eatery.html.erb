@@ -1,0 +1,34 @@
+<%= f.input :user_id, as: :hidden, input_html: { value: current_user.id} %>
+<div class="row">
+  <div class='form-group col-xs-4'>
+    <%= f.input :eatery_name,  input_html: {class: 'form-control'}, label: 'Restaurant Name' %>
+  </div>
+</div>
+<div class="row">
+  <div class='form-group col-xs-4'>
+    <%= f.input :eatery_description, as: :text, input_html: {class: 'form-control'}, label: 'Description' %>
+  </div>
+</div>
+<div class="row">
+  <div class='form-group col-xs-4'>
+    <%= f.input :eatery_contact, input_html: {class: 'form-control'}, label: 'Restaurant Contact Number' %>
+  </div>
+</div>
+<div class="row">
+  <div class='form-group col-xs-4'>
+    <%= f.input :eatery_email, input_html: {class: 'form-control'}, label: 'Restaurant Email' %>
+  </div>
+</div>
+<div class="row">
+  <div class='form-group col-xs-4'>
+    <%= f.input :eatery_address, as: :text, input_html: {class: 'form-control'}, label: 'Restaurant Address' %>
+  </div>
+</div>
+<div class="row">
+  <div class='form-group col-xs-4'>
+    <% if @eatery.image.exists? %>
+      <%= image_tag @eatery.image.url(:thumb) %><br/>
+    <% end %>
+   <%= f.input :image, as: :file,  label: 'Restaurant Image' %>
+  </div>
+</div>
