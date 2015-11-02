@@ -52,3 +52,7 @@ group  :development, :test do
   gem 'shoulda-matchers', '~> 2.8.0'
 end
 
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
