@@ -15,5 +15,4 @@ class DealController < ApplicationController
   def show
     @deal= Deal.find(params[:id])
   end
-
 end

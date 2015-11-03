@@ -7,6 +7,10 @@ class VendorDealController < ApplicationController
     end
   end
 
+  before_action only: [:new, :edit, :create, :update] do
+    @eateries = current_user.eateries
+  end
+
   def index
     eatery_ids = current_user.eateries.pluck(:id)
     @deals = Deal.where(eatery_id: eatery_ids)
@@ -15,28 +19,43 @@ class VendorDealController < ApplicationController
 
 
   def new
-    @eateries = current_user.eateries
     @deal= Deal.new
   end
 
   def create
     @deal = Deal.new(deal_params)
     if @deal.save
-      flash[:success] = 'deal was successfully added.'
+      flash[:success] = 'Deal was successfully added.'
       redirect_to action: 'index'
     else
-      @eateries = current_user.eateries
       render :new
     end
   end
 
   def edit
-
+    @deal = Deal.find(params[:id])
   end
 
   def update
-
+    @deal = Deal.find(params[:id])
+    if @deal.update_attributes(deal_params)
+      redirect_to root_path, flash:{success: "Deal updated Successfully"}
+    else
+      render :edit
+    end
   end
+
+  def destroy
+    @deal = Deal.find(params[:id])
+    if @deal.present?
+      @deal.destroy
+      flash[:success] = "Deal destroyed Successfully"
+    else
+      flash[:warning] = "Deal could not be deleted"
+    end
+    redirect_to root_path
+  end
+
   private
 
   def deal_params

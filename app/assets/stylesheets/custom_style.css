@@ -100,7 +100,7 @@ ul.signup .dropdown-menu input { display: block }
 .unit { padding: 19px }
 .unit-block { margin-bottom: 20px }
 .unit-bg {
-    background: url('../img/itembg.png') top left repeat #fff;
+    background: top left repeat #fff;
     border: 3px solid #EFEFEF;
     -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.15);
     -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.15);
@@ -332,4 +332,8 @@ ul.socialicons li a:hover {
 
 .unit legend {
   color: #ffa000;
+}
+
+.thumbnail a > img {
+  display: inline;
 }

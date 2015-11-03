@@ -6,10 +6,7 @@ class Deal < ActiveRecord::Base
 
   has_attached_file :image,
   :styles => {
-  :tiny => "25x25#",
   :thumbnail => "100x100#",
-  :small  => "150x150>",
-  :default_url => "/images/logo.png",
   :medium => "300x300>" }
   do_not_validate_attachment_file_type :image
   validates :name, presence: true

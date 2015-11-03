@@ -33,13 +33,16 @@
               <div class="caption">
                 <h2><%= deal.name %></h2>
                 <p>
-                  <%= link_to 'View', deal_path(deal), class: "btn btn-success"%>
-                    <span class="help-inline text-highlight-small">
-                      $<%=deal.current_amount %>
-                    </span>
-                    <span class="help-inline text-strike">
-                      $<%=deal.previous_amount %>
-                    </span>
+                  <%= link_to(image_tag("view.png",title: "view"), deal_path(deal))%>
+                  <%= modify(deal) %>
+                </p>
+                <p>
+                  <span class="help-inline text-highlight-small">
+                    $<%=deal.current_amount %>
+                  </span>
+                  <span class="help-inline text-strike">
+                    $<%=deal.previous_amount %>
+                  </span>
                 </p>
                 <hr>
                 <p id="sold_coupons"><%= deal.sold_coupons%> Purchased
