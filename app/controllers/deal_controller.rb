@@ -1,8 +1,5 @@
 class DealController < ApplicationController
-
-  # before_action only: :index do
-  #   redirect_to :vendor_deal_index if current_user && current_user.is_vendor?
-  # end
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     if params[:search].to_s.strip.length == 0

@@ -1,5 +1,4 @@
 class ReviewController < ApplicationController
-  before_action :authenticate_user!, only:[:new, :create]
   before_action :valid_params?, only: [:new, :create]
 
 

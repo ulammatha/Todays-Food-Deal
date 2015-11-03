@@ -1,5 +1,4 @@
 class CouponRedemptionController < ApplicationController
-  before_action :authenticate_user! , only:[:index, :show, :update]
   before_action do
     unless current_user && current_user.is_vendor?
      flash[:notice] = "no access hence redirect to home page"
