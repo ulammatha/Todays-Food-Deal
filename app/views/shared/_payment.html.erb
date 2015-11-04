@@ -1,0 +1,9 @@
+<%= form_for(:payment, url: charges_path) do |f| %>
+  <%= f.hidden_field :amount, value: deal.current_amount%>
+  <%= f.hidden_field :deal_id, value: deal.id%>
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+    data-description="A month's subscription"
+    data-amount="<%= deal.current_amount * 100 %>"
+    data-locale="auto"></script>
+<% end %>

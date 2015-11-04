@@ -1,8 +1,7 @@
 class VendorDealController < ApplicationController
   before_action do
     unless current_user && current_user.is_vendor?
-     flash[:notice] = "no access hence redirect to home page"
-      redirect_to :root
+      redirect_to(:root, notice: "unauthorized to access")
     end
   end
   before_action only: [:new, :edit, :create, :update] do
@@ -14,9 +13,8 @@ class VendorDealController < ApplicationController
   def index
     eatery_ids = current_user.eateries.pluck(:id)
     @deals = Deal.where(eatery_id: eatery_ids)
-    render 'deal/index'
+    render 'shared/deal_index'
   end
-
 
   def new
     @deal= Deal.new
@@ -44,7 +42,7 @@ class VendorDealController < ApplicationController
 
   def destroy
     @deal = Deal.find(params[:id])
-    @deal.destroy
+    @deal.update!(deleted_at: Time.zone.now)
     flash[:success] = "Deal destroyed Successfully"
     respond_with(@deal, location: root_path)
   end
@@ -61,7 +59,9 @@ class VendorDealController < ApplicationController
         :expiry,
         :coupon_code,
         :available_coupons,
-        :image, :eatery_id
+        :image,
+        :eatery_id,
+        :deleted_at
       )
   end
 end

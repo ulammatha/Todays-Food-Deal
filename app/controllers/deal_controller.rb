@@ -1,15 +1,25 @@
 class DealController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
+  before_action do
+    redirect_to vendor_deal_index_path if vendor?
+  end
 
   def index
     if params[:search].to_s.strip.length == 0
-      @deals = Deal.all
+      @deals = Deal.where(deleted_at: nil)
     else
       @deals = Deal.search params[:search]
     end
+    render 'shared/deal_index'
   end
 
   def show
     @deal= Deal.find(params[:id])
+  end
+
+  private
+
+  def vendor?
+    current_user && current_user.is_vendor
   end
 end

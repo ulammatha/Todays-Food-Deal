@@ -1,0 +1,35 @@
+{
+    "folders":
+    [
+      {
+        "path": ".",
+        "folder_exclude_patterns": ["doc", ".bundle", "tmp", "bin", ".yardoc", "vendor"]
+      }
+    ],
+    "settings":
+    {
+      "tab_size": 2,
+      // set vertical rulers in specified columns.
+      // Use "rulers": [80] for just one ruler
+      // default value is []
+      "rulers": [80],
+
+      // turn on word wrap for source and text
+      // default value is "auto", which means off for source and on for text
+      "word_wrap": true,
+
+      // set word wrapping at this column
+      // default value is 0
+      "wrap_width": 80
+    },
+
+    "build_systems":
+    [
+      {
+        "name": "List",
+        "shell_cmd": "ls -l"
+      }
+    ]
+
+
+}

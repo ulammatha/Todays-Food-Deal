@@ -29,7 +29,7 @@
     sold_coupons: 0,
     eatery_id: eatery.id,
     image: File.open(File.join(Rails.root, "/app/assets/images/deal1.jpg"))
-    )
+  )
   # User account
   user = User.create(email: "first_user@foodeals.com", password: "testuser123")
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151031195354) do
+ActiveRecord::Schema.define(version: 20151103235926) do
 
   create_table "coupons", force: true do |t|
     t.string   "code"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20151031195354) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.datetime "deleted_at"
   end
 
   add_index "deals", ["eatery_id"], name: "index_deals_on_eatery_id", using: :btree

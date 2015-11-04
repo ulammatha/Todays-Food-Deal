@@ -1,7 +1,6 @@
 class ReviewController < ApplicationController
   before_action :valid_params?, only: [:new, :create]
 
-
   def new
     @deal = Deal.find(find_coupon.deal_id)
     @review = Review.new

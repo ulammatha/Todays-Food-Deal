@@ -1,0 +1,1731 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"coureterm",
+				"courseterm_id"
+			],
+			[
+				"end",
+				"ends_at"
+			],
+			[
+				"courseterm",
+				"courseterm_id"
+			],
+			[
+				"re",
+				"rejected"
+			],
+			[
+				"res",
+				"response_rate"
+			],
+			[
+				"rej",
+				"rejected"
+			],
+			[
+				"point",
+				"pointFormat"
+			],
+			[
+				"respn",
+				"response_count"
+			],
+			[
+				"each",
+				"each_with_object"
+			],
+			[
+				"survey",
+				"survey_responses"
+			],
+			[
+				"surey",
+				"survey_responses"
+			],
+			[
+				"de",
+				"departments"
+			],
+			[
+				"surve",
+				"survey_response"
+			],
+			[
+				"dep",
+				"department"
+			],
+			[
+				"course",
+				"courseterm_students"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"mu",
+				"multi_choice"
+			],
+			[
+				"ques",
+				"questionable_type"
+			],
+			[
+				"in",
+				"inclusion"
+			],
+			[
+				"question",
+				"question_type"
+			],
+			[
+				"qu",
+				"question"
+			],
+			[
+				"cou",
+				"courseterm_surveys"
+			],
+			[
+				"co",
+				"courseterm_surveys"
+			],
+			[
+				"depar",
+				"department_id"
+			],
+			[
+				"grade_dis",
+				"grade_distributions"
+			],
+			[
+				"survy",
+				"survey_id"
+			],
+			[
+				"r",
+				"report"
+			],
+			[
+				"questio",
+				"questionable"
+			],
+			[
+				"Cours",
+				"CoursetermStudent"
+			],
+			[
+				"should",
+				"should_not"
+			],
+			[
+				"ct_",
+				"ct_student_survey"
+			],
+			[
+				"que",
+				"questionable"
+			],
+			[
+				"cour",
+				"courseterm"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"Sur",
+				"survey"
+			],
+			[
+				"sure",
+				"survey_id"
+			],
+			[
+				"sur",
+				"survey_response"
+			],
+			[
+				"qui",
+				"quiz_score"
+			],
+			[
+				"quiz",
+				"quiz-timer"
+			],
+			[
+				"student",
+				"student_number"
+			],
+			[
+				"stude",
+				"student_number"
+			],
+			[
+				"folder",
+				"folder_exclude_patterns"
+			],
+			[
+				"find",
+				"find_by"
+			],
+			[
+				"succ",
+				"successful"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"set",
+				"set_values"
+			],
+			[
+				"before",
+				"before_filter"
+			],
+			[
+				"cure",
+				"current_question"
+			],
+			[
+				"next",
+				"next_question"
+			],
+			[
+				"corr",
+				"correct_answer"
+			],
+			[
+				"Quiz",
+				"QuizAnswer"
+			],
+			[
+				"started",
+				"started_at"
+			],
+			[
+				"qiz",
+				"quiz_score"
+			],
+			[
+				"to",
+				"to_i"
+			],
+			[
+				"st",
+				"started"
+			],
+			[
+				"answer",
+				"answer_set"
+			],
+			[
+				"first_ques",
+				"first_question_id"
+			],
+			[
+				"submitted",
+				"submitted_at"
+			],
+			[
+				"first",
+				"first_question"
+			],
+			[
+				"las",
+				"last_question"
+			],
+			[
+				"cuu",
+				"current_question"
+			],
+			[
+				"current",
+				"current_question"
+			],
+			[
+				"fir",
+				"first_question"
+			],
+			[
+				"courseter",
+				"courseterm"
+			],
+			[
+				"Fac",
+				"FactoryGirl"
+			],
+			[
+				"coure",
+				"courseterm"
+			],
+			[
+				"Course",
+				"courseterm"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"ass",
+				"assignment"
+			],
+			[
+				"cours",
+				"courseterm_students"
+			],
+			[
+				"stu",
+				"student_quiz_answers"
+			],
+			[
+				"questi",
+				"question_type"
+			],
+			[
+				"true",
+				"true_false"
+			],
+			[
+				"allo",
+				"allow_to_publish"
+			],
+			[
+				"be",
+				"be_falsey"
+			],
+			[
+				"ans",
+				"answer_set"
+			],
+			[
+				"mul",
+				"multiple_answer"
+			],
+			[
+				"fla",
+				"flash"
+			],
+			[
+				"is",
+				"is_expected"
+			],
+			[
+				"valida",
+				"validate_presence_of"
+			],
+			[
+				"not",
+				"not_to"
+			],
+			[
+				"question_",
+				"question_answers"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"sho",
+				"show_answers"
+			],
+			[
+				"sh",
+				"shuffle_questions"
+			],
+			[
+				"en",
+				"ends_at"
+			],
+			[
+				"asset",
+				"asset_id"
+			],
+			[
+				"quesion",
+				"question_answers"
+			],
+			[
+				"par",
+				"params"
+			],
+			[
+				"un",
+				"unsubmitted"
+			],
+			[
+				"quiz_",
+				"quiz_status"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"render",
+				"render_template"
+			],
+			[
+				"start",
+				"starts_at"
+			],
+			[
+				"bn",
+				"binding"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"redirect",
+				"redirect_to"
+			],
+			[
+				"sub",
+				"submitted_at"
+			],
+			[
+				"dy",
+				"days"
+			],
+			[
+				"term",
+				"term_id"
+			],
+			[
+				"del",
+				"delete"
+			],
+			[
+				"p",
+				"pluck"
+			],
+			[
+				"d",
+				"debugger"
+			],
+			[
+				"back",
+				"back_button_flag"
+			],
+			[
+				"quiz_score",
+				"quiz_score_id"
+			],
+			[
+				"com",
+				"commentable_id"
+			],
+			[
+				"comm",
+				"commentable_id"
+			],
+			[
+				"left",
+				"margin-left"
+			],
+			[
+				"fo",
+				"footer"
+			],
+			[
+				"la",
+				"layouts"
+			],
+			[
+				"city",
+				"city_artists"
+			],
+			[
+				"link",
+				"link_to"
+			],
+			[
+				"s",
+				"style	Tag"
+			],
+			[
+				"u",
+				"ul	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "todays_food_deals.sublime-project",
+			"settings":
+			{
+				"buffer_size": 705,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/charges_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1243,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/fixtures/eateries.yml",
+			"settings":
+			{
+				"buffer_size": 543,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/.rubocop.yml",
+			"settings":
+			{
+				"buffer_size": 177,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/custom_style.css",
+			"settings":
+			{
+				"buffer_size": 7103,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "i",
+		"selected_items":
+		[
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Channel"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: r",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"rub",
+				"RuboCop: Check current file"
+			],
+			[
+				"",
+				"RuboCop: Auto correct current file"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"git b",
+				"Set Syntax: Git Blame"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Push"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: St",
+				"Package Control: Install Package"
+			],
+			[
+				"gem",
+				"Gem Browser: List Gems"
+			],
+			[
+				"list",
+				"Gem Browser: List Gems"
+			],
+			[
+				"packagecon",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rubocop",
+				"Preferences: Rubocop Key Bindings – Default"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/uday/Projects/TodaysFoodDeals",
+		"/Users/uday/Projects/TodaysFoodDeals/spec",
+		"/Users/uday/Projects/TodaysFoodDeals/test",
+		"/Users/uday/Projects/TodaysFoodDeals/test/fixtures",
+		"/Users/uday/Projects/TodaysFoodDeals/test/helpers",
+		"/Users/uday/Projects/TodaysFoodDeals/test/integration"
+	],
+	"file_history":
+	[
+		"/Users/uday/Projects/TodaysFoodDeals/config/development.sphinx.conf",
+		"/Users/uday/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/uday/Library/Application Support/Sublime Text 3/Packages/User/RuboCop.sublime-settings",
+		"/Users/uday/Projects/TodaysFoodDeals/todays_food_deals.sublime-project",
+		"/Users/uday/Projects/EMS32/app/controllers/student/courseterms_controller.rb",
+		"/Users/uday/Projects/EMS32/path/ruby/2.1.0/gems/activesupport-4.1.11/lib/active_support/all.rb",
+		"/Users/uday/Projects/EMS32/app/views/manage/courseterms/show.html.haml",
+		"/Users/uday/Projects/EMS32/app/assets/javascripts/student/quiz_timer.js",
+		"/Users/uday/Projects/EMS32/config/routes/admin.rb",
+		"/Users/uday/Projects/EMS32/Gemfile",
+		"/Users/uday/Projects/EMS32/app/models/question.rb",
+		"/Users/uday/Projects/EMS32/db/schema.rb",
+		"/Users/uday/Projects/EMS32/app/models/courseterm.rb",
+		"/Users/uday/Projects/EMS32/app/classes/zendesk_ticket.rb",
+		"/Users/uday/Projects/EMS32/config/routes/student.rb",
+		"/Users/uday/Projects/EMS32/config/routes/reports.rb",
+		"/Users/uday/Projects/EMS32/app/views/reports/courseterm_surveys/_courseterm_information.html.haml",
+		"/Users/uday/Projects/EMS32/app/cells/courseterm_surveys/show.html.haml",
+		"/Users/uday/Projects/EMS32/config/initializers/git_revision.rb",
+		"/Users/uday/Projects/EMS32/app/models/quiz.rb",
+		"/Users/uday/Projects/EMS32/app/workers/survey_data_setup.rb",
+		"/Users/uday/Projects/EMS32/app/classes/faculty_survey_report.rb",
+		"/Users/uday/Projects/EMS32/config.ru",
+		"/Users/uday/Projects/EMS32/config/environment.rb",
+		"/Users/uday/Projects/EMS32/app/controllers/student/quizzes_controller.rb",
+		"/Users/uday/Projects/EMS32/app/views/student/quizzes/question/_question.html.haml",
+		"/Users/uday/Projects/EMS32/app/models/survey_response.rb",
+		"/Users/uday/Projects/EMS32/app/models/survey.rb",
+		"/Users/uday/Projects/EMS32/app/models/courseterm_student_survey.rb",
+		"/Users/uday/Projects/EMS32/spec/factories/courseterm_student_surveys_factory.rb",
+		"/Users/uday/Projects/EMS32/app/classes/survey_report.rb",
+		"/Users/uday/Projects/EMS32/spec/classes/faculty_survey_report.rb",
+		"/Users/uday/Projects/EMS32/app/controllers/faculty/dashboard_controller.rb",
+		"/Users/uday/Projects/EMS32/spec/models/quiz_spec.rb",
+		"/Users/uday/Projects/EMS32/app/models/application_model.rb",
+		"/Users/uday/Projects/EMS32/app/models/activity.rb",
+		"/Users/uday/Projects/EMS32/spec/factories/term_factory.rb",
+		"/Users/uday/Projects/EMS32/spec/controllers/faculty/final_grades_controller_spec.rb",
+		"/Users/uday/Projects/EMS32/app/models/term.rb",
+		"/Users/uday/Projects/EMS32/app/cells/courseterm_surveys/readme_modal.haml",
+		"/Users/uday/Projects/EMS32/app/cells/courseterm_surveys/readme_modal.html.haml",
+		"/Users/uday/Projects/EMS32/app/controllers/reports/courseterm_surveys_controller.rb",
+		"/Users/uday/Projects/EMS32/app/policies/survey_report_policy.rb",
+		"/Users/uday/Projects/EMS32/app/classes/access.rb",
+		"/Users/uday/Projects/EMS32/app/policies/report_policy.rb",
+		"/Users/uday/Projects/EMS32/app/views/reports/courseterm_surveys/report.html.haml",
+		"/Users/uday/Projects/EMS32/app/policies/coursework_policy.rb",
+		"/Users/uday/Projects/EMS32/app/controllers/discussions_controller.rb",
+		"/Users/uday/Projects/EMS32/app/controllers/reports/reports_controller.rb",
+		"/Users/uday/Projects/EMS32/config/routes/faculty.rb",
+		"/Users/uday/Projects/EMS32/app/views/faculty/dashboard/show.html.haml",
+		"/Users/uday/Projects/EMS32/app/controllers/faculty/surveys_controller.rb",
+		"/Users/uday/Projects/EMS32/app/cells/courseterm_surveys_cell.rb",
+		"/Users/uday/Projects/EMS32/app/policies/quiz_score_policy.rb",
+		"/Users/uday/Projects/EMS32/spec/policies/report_policy_spec.rb",
+		"/Users/uday/Projects/EMS32/app/controllers/reports/dashboards_controller.rb",
+		"/Users/uday/Projects/EMS32/app/views/layouts/reports/courseterm_surveys.html.haml",
+		"/Users/uday/Projects/EMS32/app/models/broadcast.rb",
+		"/Users/uday/Projects/EMS32/app/classes/coursecloner.rb",
+		"/Users/uday/Projects/EMS32/spec/controllers/faculty/students_controller_spec.rb",
+		"/Users/uday/Projects/EMS32/app/helpers/faculty/surveys_helper.rb",
+		"/Users/uday/Projects/EMS32/app/cells/announcement_list_cell.rb",
+		"/Users/uday/Projects/EMS32/app/cells/news/show.html.haml",
+		"/Users/uday/Projects/EMS32/app/widgets/faculty_courseterms_list/form/form.html.haml",
+		"/Users/uday/Projects/EMS32/app/cells/announcement_list/modal.haml",
+		"/Users/uday/Projects/EMS32/spec/classes/survey_report_spec.rb",
+		"/Users/uday/Projects/EMS32/spec/factories/courseterm_student_factory.rb",
+		"/Users/uday/Projects/EMS32/app/models/courseterm_student.rb",
+		"/Users/uday/Projects/EMS32/app/models/student.rb",
+		"/Users/uday/Projects/EMS32/spec/factories/student_factory.rb",
+		"/Users/uday/Projects/EMS32/spec/models/courseterm_student_survey_spec.rb",
+		"/Users/uday/Projects/EMS32/spec/controllers/reports/courseterm_surveys_controller_spec.rb",
+		"/Users/uday/Projects/EMS32/app/classes/quiz_score_card.rb",
+		"/Users/uday/Projects/EMS32/config/survey_data_setup.yml",
+		"/Users/uday/Projects/EMS32/app/views/reports/courseterm_surveys/report.xls.erb",
+		"/Users/uday/Projects/EMS32/app/controllers/student/surveys_controller.rb",
+		"/Users/uday/Projects/EMS32/spec/controllers/student/surveys_controller_spec.rb",
+		"/Users/uday/Projects/EMS32/app/views/student/surveys/_essay.html.haml",
+		"/Users/uday/Projects/EMS32/app/assets/javascripts/reports/survey_pie_charts.js",
+		"/Users/uday/Projects/EMS32/app/assets/javascripts/reports/courseterm_surveys.js",
+		"/Users/uday/Projects/EMS32/config/database.yml",
+		"/Users/uday/Projects/EMS32/config/routes/global.rb",
+		"/Users/uday/Projects/EMS32/lib/tasks/data/add_user_records.rake",
+		"/Users/uday/Projects/EMS32/app/modules/user_records.rb",
+		"/Users/uday/Projects/EMS32/lib/tasks/data/ems_ex_student_records_sync.rake",
+		"/Users/uday/Projects/EMS32/config/routes/pastel.rb",
+		"/Users/uday/Projects/EMS32/app/models/assignment.rb",
+		"/Users/uday/Projects/EMS32/app/views/student/surveys/show.html.haml",
+		"/Users/uday/Projects/EMS32/app/views/reports/courseterm_surveys/index.html.haml",
+		"/Users/uday/Projects/EMS32/app/models/faculty.rb",
+		"/Users/uday/Projects/EMS32/app/models/department.rb",
+		"/Users/uday/Projects/EMS32/app/models/group.rb",
+		"/Users/uday/Projects/EMS32/app/classes/access/head_of_department.rb",
+		"/Users/uday/Projects/EMS32/app/models/user.rb",
+		"/Users/uday/Projects/EMS32/app/models/employee.rb",
+		"/Users/uday/Projects/EMS32/app/models/course.rb",
+		"/Users/uday/Projects/EMS32/app/decorators/courseterm_decorator.rb",
+		"/Users/uday/Projects/EMS32/app/controllers/faculty/courseclone_controller.rb",
+		"/Users/uday/Projects/EMS32/app/widgets/head_of_department_view/courseclone/done.html.haml",
+		"/Users/uday/Projects/EMS32/app/policies/question_answer_policy.rb",
+		"/Users/uday/Projects/EMS32/app/policies/courseterm_policy.rb",
+		"/Users/uday/Projects/EMS32/app/modules/verify_role.rb",
+		"/Users/uday/Projects/EMS32/app/assets/stylesheets/application.css.scss",
+		"/Users/uday/Projects/EMS32/app/assets/stylesheets/student/surveys.css.scss",
+		"/Users/uday/Projects/EMS32/app/cells/faculty_courseterms/index.html.haml",
+		"/Users/uday/Projects/EMS32/app/cells/courseterm_course_list/show.html.haml",
+		"/Users/uday/Projects/EMS32/app/reporting/base.rb",
+		"/Users/uday/Projects/EMS32/app/reporting/cpt_students_report.rb",
+		"/Users/uday/Projects/EMS32/app/views/student/surveys/_multiple_choice.html.haml",
+		"/Users/uday/Projects/EMS32/spec/factories/survey_responses_factory.rb",
+		"/Users/uday/Projects/EMS32/spec/models/survey_response_spec.rb",
+		"/Users/uday/Projects/EMS32/app/models/quiz_score.rb",
+		"/Users/uday/Projects/EMS32/spec/support/login_helper.rb",
+		"/Users/uday/Projects/EMS32/spec/factories/question_factory.rb",
+		"/Users/uday/Projects/EMS32/app/views/student/courseterms/survey_modal.html.haml",
+		"/Users/uday/Projects/EMS32/spec/factories/surveys_factory.rb",
+		"/Users/uday/Projects/EMS32/spec/factories/question_answer_factory.rb",
+		"/Users/uday/Projects/EMS32/app/views/reports/courseterm_surveys/xls_report.xls.erb",
+		"/Users/uday/Projects/EMS32/app/models/attendance_session.rb",
+		"/Users/uday/Projects/EMS32/app/controllers/account_confirmation_controller.rb",
+		"/Users/uday/Projects/EMS32/app/controllers/chat_controller.rb",
+		"/Users/uday/Projects/EMS32/db/migrate/20150421201412_remove_student_number_leading_zeros.rb",
+		"/Users/uday/Projects/EMS32/app/classes/course_sync.rb",
+		"/Users/uday/Projects/EMS32/app/classes/user_sync.rb",
+		"/Users/uday/Projects/EMS32/app/views/admin/course_resources/index.html.haml",
+		"/Users/uday/Projects/EMS32/app/assets/stylesheets/student_quiz.css.scss",
+		"/Users/uday/Projects/EMS32/db/migrate/20150625054523_change_response_in_survey_reponse_to_text_type.rb",
+		"/Users/uday/Projects/EMS32/db/migrate/20150607052919_change_quiz_score_question_set_to_text_type.rb"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/Users/uday/Projects/EMS32/app/assets/stylesheets",
+			"",
+			"/Users/uday/Projects/EMS32/app/assets/stylesheets",
+			"",
+			"/Users/uday/Projects/EMS32/app/assets/stylesheets",
+			"/Users/uday/Projects/EMS32/app/views,/Users/uday/Projects/EMS32/app/assets/stylesheets",
+			"/Users/uday/Projects/EMS32/app/views",
+			"",
+			"/Users/uday/Projects/EMS32/app/assets/stylesheets",
+			"",
+			"spec",
+			"",
+			"/Users/uday/Projects/TodaysFoodDeals/app/assets/javascripts",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"initalize",
+			"attr_accessor",
+			"should",
+			"rspec",
+			"dotenv",
+			"student_response",
+			"def role",
+			"helper",
+			"courseterm_navigation_tab",
+			"assignment_scores",
+			"quiz_form",
+			"precompile",
+			"assets:precompile",
+			"airbrake",
+			"rack",
+			"message",
+			"mq",
+			"rabbit",
+			"bootstrap_class_for",
+			"memcache",
+			"redis",
+			"setup_status_display",
+			"assignment_scores",
+			"precompile",
+			"javascript_include_tag",
+			"survey_modal",
+			"render template:",
+			"render",
+			"pry",
+			"bootstrap",
+			"simple",
+			"extend",
+			"rspec",
+			"questions",
+			"surveys",
+			"proc",
+			"ruby",
+			"trimister",
+			"survey_response",
+			"survey_reponse",
+			"incomplete(",
+			"incomplete(enrolled_students)",
+			"FacultySurveyReport",
+			"update_visible_for",
+			"class << self",
+			"FacultySurveyReport",
+			"timecop",
+			"role_type",
+			"admin_permissions",
+			"has_permission",
+			"submit?",
+			"authorize",
+			"def faculty_of?",
+			"permissions",
+			"chart_scripts",
+			"@report_links",
+			"surv",
+			"survyes",
+			"survies",
+			"current_user",
+			"AnnouncementListCell",
+			"announcement_list",
+			"render_cell",
+			"collect_activities_for_faculty",
+			"courseterm",
+			"binding.pry",
+			"%i",
+			"survey",
+			"SurveyReport",
+			"accessed?",
+			"course",
+			"question.id",
+			"question",
+			"reject!",
+			"  ",
+			"multi_choice_question_chart_report",
+			"reindex all models",
+			"delegate",
+			"department_name",
+			"program",
+			"programm",
+			"program",
+			"delegate",
+			"def authorize_and_load_courseterm",
+			"authorize_and_load_courseterm",
+			"groups",
+			"UserGroup",
+			"question_report",
+			"chart_scripts",
+			".panel-body",
+			"_path",
+			"def report_selection_label",
+			"delegate",
+			"survey_response",
+			"response",
+			"survey_response",
+			"create_survey_response",
+			"Highest grade",
+			"SurveyReport",
+			"department",
+			"be_instance_of",
+			"def create_login_faculty",
+			"student_courseterm_survey",
+			"courseterm_faculty",
+			"attempted_surveys",
+			"for_term",
+			"multi_choice_question_report",
+			"xls_report",
+			"survey_questions",
+			"scope",
+			"<",
+			"<<<",
+			"<<",
+			">",
+			">>",
+			">>>",
+			"courseterm_faculty",
+			"<<<",
+			"flash[",
+			"valid?",
+			"simple_form_for",
+			"muted",
+			"update_survey_response",
+			"multi_choice_response",
+			"survey_response",
+			"surevy_response",
+			"length:",
+			"description"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "todays_food_deals.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/charges_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1054,
+								1054
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"wrap_width": 80
+						},
+						"translation.x": 0.0,
+						"translation.y": 296.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/fixtures/eateries.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								543,
+								543
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/.rubocop.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								113
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/stylesheets/custom_style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								767,
+								767
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "todays_food_deals.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"quizp",
+				"app/policies/quiz_policy.rb"
+			],
+			[
+				"quiz",
+				"app/models/quiz.rb"
+			],
+			[
+				"quizzes",
+				"app/views/student/quizzes/question/modal.haml"
+			],
+			[
+				"student",
+				"app/models/student.rb"
+			],
+			[
+				"database",
+				"config/database.yml"
+			],
+			[
+				"all",
+				"path/ruby/2.1.0/gems/activesupport-4.1.11/lib/active_support/all.rb"
+			],
+			[
+				"routes/",
+				"config/routes/admin.rb"
+			],
+			[
+				"zendeskticket",
+				"app/classes/zendesk_ticket.rb"
+			],
+			[
+				"quiz_tim",
+				"app/assets/javascripts/student/quiz_timer.js"
+			],
+			[
+				"question",
+				"app/models/question.rb"
+			],
+			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"quiz_score",
+				"app/classes/quiz_score_card.rb"
+			],
+			[
+				"config/rep",
+				"config/routes/reports.rb"
+			],
+			[
+				"config/routes",
+				"config/routes/student.rb"
+			],
+			[
+				"config/stu",
+				"config/routes/student.rb"
+			],
+			[
+				"config",
+				"config.ru"
+			],
+			[
+				"survey_da",
+				"app/workers/survey_data_setup.rb"
+			],
+			[
+				"git_re",
+				"config/initializers/git_revision.rb"
+			],
+			[
+				"env",
+				"config/environment.rb"
+			],
+			[
+				"db/sc",
+				"db/schema.rb"
+			],
+			[
+				"courseterm_student_survey",
+				"app/models/courseterm_student_survey.rb"
+			],
+			[
+				"survey",
+				"app/models/survey.rb"
+			],
+			[
+				"survey_repsonse",
+				"app/models/survey_response.rb"
+			],
+			[
+				"courseterm_student_surveys",
+				"spec/factories/courseterm_student_surveys_factory.rb"
+			],
+			[
+				"coursetermstsu",
+				"app/models/courseterm_student_survey.rb"
+			],
+			[
+				"config/reports",
+				"config/routes/reports.rb"
+			],
+			[
+				"quiz_timer",
+				"app/assets/javascripts/student/quiz_timer.js"
+			],
+			[
+				"views/student/quizz",
+				"app/views/student/quizzes/question/_question.html.haml"
+			],
+			[
+				"student/qui",
+				"app/controllers/student/quizzes_controller.rb"
+			],
+			[
+				"app/classes/faculty_survey_report.rb",
+				"app/classes/faculty_survey_report.rb"
+			],
+			[
+				"app/classes/survey_report.rb",
+				"app/classes/survey_report.rb"
+			],
+			[
+				"quiz_sp",
+				"spec/models/quiz_spec.rb"
+			],
+			[
+				"termf",
+				"spec/factories/term_factory.rb"
+			],
+			[
+				"term",
+				"app/models/term.rb"
+			],
+			[
+				"courseterm",
+				"app/models/courseterm.rb"
+			],
+			[
+				"survey_de",
+				"app/workers/survey_data_setup.rb"
+			],
+			[
+				"controllers/coursetermsu",
+				"app/controllers/reports/courseterm_surveys_controller.rb"
+			],
+			[
+				"survey_rep",
+				"app/policies/survey_report_policy.rb"
+			],
+			[
+				"report_p",
+				"app/policies/report_policy.rb"
+			],
+			[
+				"app/controllers/faculty/surveys_controller.rb",
+				"app/controllers/faculty/surveys_controller.rb"
+			],
+			[
+				"app/cells/courseterm_surveys_cell.rb",
+				"app/cells/courseterm_surveys_cell.rb"
+			],
+			[
+				"app/views/faculty/dashboard/show.html.haml",
+				"app/views/faculty/dashboard/show.html.haml"
+			],
+			[
+				"report_po",
+				"app/policies/report_policy.rb"
+			],
+			[
+				"survey_report_p",
+				"app/policies/survey_report_policy.rb"
+			],
+			[
+				"reportp",
+				"app/policies/report_policy.rb"
+			],
+			[
+				"coursework_p",
+				"app/policies/coursework_policy.rb"
+			],
+			[
+				"report_pol",
+				"app/policies/report_policy.rb"
+			],
+			[
+				"reportpolicy",
+				"app/policies/report_policy.rb"
+			],
+			[
+				"quiz_scorep",
+				"app/policies/quiz_score_policy.rb"
+			],
+			[
+				"report",
+				"app/policies/report_policy.rb"
+			],
+			[
+				"config/f",
+				"config/routes/faculty.rb"
+			],
+			[
+				"broadcast",
+				"app/models/broadcast.rb"
+			],
+			[
+				"app/cells/news/show.html.haml",
+				"app/cells/news/show.html.haml"
+			],
+			[
+				"app/widgets/faculty_courseterms_list/form/form",
+				"app/widgets/faculty_courseterms_list/form/form.html.haml"
+			],
+			[
+				"courseterm_st",
+				"spec/factories/courseterm_student_factory.rb"
+			],
+			[
+				"student_f",
+				"spec/factories/student_factory.rb"
+			],
+			[
+				"courseterm_student_f",
+				"spec/factories/courseterm_student_factory.rb"
+			],
+			[
+				"courseterm_student_survey_sp",
+				"spec/models/courseterm_student_survey_spec.rb"
+			],
+			[
+				"coursetermstu",
+				"app/models/courseterm_student.rb"
+			],
+			[
+				"spec/coursetermsur",
+				"spec/controllers/reports/courseterm_surveys_controller_spec.rb"
+			],
+			[
+				"spec/classes/survey_report_spec.rb",
+				"spec/classes/survey_report_spec.rb"
+			],
+			[
+				"survey_report",
+				"app/classes/survey_report.rb"
+			],
+			[
+				"survey_re",
+				"app/classes/survey_report.rb"
+			],
+			[
+				"survey_d",
+				"app/workers/survey_data_setup.rb"
+			],
+			[
+				"surveyd",
+				"config/survey_data_setup.yml"
+			],
+			[
+				"survey_dat",
+				"config/survey_data_setup.yml"
+			],
+			[
+				"survey_set",
+				"app/workers/survey_data_setup.rb"
+			],
+			[
+				"spec/controllers/student/surveys_controller_spec.rb",
+				"spec/controllers/student/surveys_controller_spec.rb"
+			],
+			[
+				"views/reports/cou",
+				"app/views/reports/courseterm_surveys/report.html.haml"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"config/pas",
+				"config/routes/pastel.rb"
+			],
+			[
+				"userrecords",
+				"app/modules/user_records.rb"
+			],
+			[
+				"studentrecords",
+				"lib/tasks/data/ems_ex_student_records_sync.rake"
+			],
+			[
+				"add_user_records",
+				"lib/tasks/data/add_user_records.rake"
+			],
+			[
+				"config/routes/global.rb",
+				"config/routes/global.rb"
+			],
+			[
+				"survey_se",
+				"app/workers/survey_data_setup.rb"
+			],
+			[
+				"dep",
+				"app/models/department.rb"
+			],
+			[
+				"course",
+				"app/models/course.rb"
+			],
+			[
+				"coursetermpol",
+				"app/policies/courseterm_policy.rb"
+			],
+			[
+				"courseclonecontr",
+				"app/controllers/faculty/courseclone_controller.rb"
+			],
+			[
+				"heado",
+				"app/widgets/head_of_department_view/courseclone/done.html.haml"
+			],
+			[
+				"userpolicy",
+				"app/policies/question_answer_policy.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"employee",
+				"app/models/employee.rb"
+			],
+			[
+				"hod",
+				"app/classes/access/head_of_department.rb"
+			],
+			[
+				"faculty",
+				"app/models/faculty.rb"
+			],
+			[
+				"department",
+				"app/models/department.rb"
+			],
+			[
+				"group",
+				"app/models/group.rb"
+			],
+			[
+				"deap",
+				"app/models/department.rb"
+			],
+			[
+				"surveyre",
+				"app/classes/survey_report.rb"
+			],
+			[
+				"reports/cou",
+				"app/views/reports/courseterm_surveys/report.html.haml"
+			],
+			[
+				"depar",
+				"app/models/department.rb"
+			],
+			[
+				"controller/reports/",
+				"app/controllers/reports/courseterm_surveys_controller.rb"
+			],
+			[
+				"courseterm_survey_controller",
+				"spec/controllers/reports/courseterm_surveys_controller_spec.rb"
+			],
+			[
+				"config/report",
+				"config/routes/reports.rb"
+			],
+			[
+				"reportsc",
+				"app/controllers/reports/reports_controller.rb"
+			],
+			[
+				"surveyrepo",
+				"app/classes/survey_report.rb"
+			],
+			[
+				"courseterm_surveys_controller.rb",
+				"app/controllers/reports/courseterm_surveys_controller.rb"
+			],
+			[
+				"spec/controllers/reports/courseterm_surveys_controller_spec.rb",
+				"spec/controllers/reports/courseterm_surveys_controller_spec.rb"
+			],
+			[
+				"courseterm_su",
+				"app/controllers/reports/courseterm_surveys_controller.rb"
+			],
+			[
+				"setup",
+				"app/workers/survey_data_setup.rb"
+			],
+			[
+				"coursetermstusu",
+				"app/models/courseterm_student_survey.rb"
+			],
+			[
+				"survey_response",
+				"spec/models/survey_response_spec.rb"
+			],
+			[
+				"survey_responsef",
+				"spec/factories/survey_responses_factory.rb"
+			],
+			[
+				"schem",
+				"db/schema.rb"
+			],
+			[
+				"app/controllers/student/surveys_controller.rb",
+				"app/controllers/student/surveys_controller.rb"
+			],
+			[
+				"app/views/reports/courseterm_surveys/report.html.haml",
+				"app/views/reports/courseterm_surveys/report.html.haml"
+			],
+			[
+				"surveyreport",
+				"app/classes/survey_report.rb"
+			],
+			[
+				"app/controllers/reports/courseterm_surveys_controller.rb",
+				"app/controllers/reports/courseterm_surveys_controller.rb"
+			],
+			[
+				"reports/c",
+				"app/views/layouts/reports/courseterm_surveys.html.haml"
+			],
+			[
+				"quisc",
+				"app/models/quiz_score.rb"
+			],
+			[
+				"survey_con",
+				"app/controllers/student/surveys_controller.rb"
+			],
+			[
+				"confi/repo",
+				"config/routes/reports.rb"
+			],
+			[
+				"config/fac",
+				"config/routes/faculty.rb"
+			],
+			[
+				"config/studen",
+				"config/routes/student.rb"
+			],
+			[
+				"app/models/question.rb",
+				"app/models/question.rb"
+			],
+			[
+				"app/views/student/surveys/_essay.html.haml",
+				"app/views/student/surveys/_essay.html.haml"
+			],
+			[
+				"survey_report_sp",
+				"spec/classes/survey_report_spec.rb"
+			],
+			[
+				"spec/courseterm_sur",
+				"spec/controllers/reports/courseterm_surveys_controller_spec.rb"
+			],
+			[
+				"depa",
+				"app/models/department.rb"
+			],
+			[
+				"config/student",
+				"config/routes/student.rb"
+			],
+			[
+				"questionf",
+				"spec/factories/question_factory.rb"
+			],
+			[
+				"survey_repo",
+				"spec/classes/survey_report_spec.rb"
+			],
+			[
+				"app/assets/javascripts/reports/courseterm_surveys.js",
+				"app/assets/javascripts/reports/courseterm_surveys.js"
+			],
+			[
+				"config/fa",
+				"config/routes/faculty.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 254.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

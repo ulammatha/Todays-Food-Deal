@@ -1,0 +1,9 @@
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  Enabled: true
+
+Style/DotPosition:
+  EnforcedStyle: trailing
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
