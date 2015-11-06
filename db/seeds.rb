@@ -19,17 +19,25 @@
     image: File.open(File.join(Rails.root, "/app/assets/images/resturant.jpg")),
     user_id: vendor.id)
 
-  deal = Deal.create(
-    name: "deal 1",
-    description: "cheaper deal",
-    current_amount: 15.32,
-    previous_amount: 22.32,
-    expiry: 10.days.from_now,
-    available_coupons: 10,
-    sold_coupons: 0,
-    eatery_id: eatery.id,
-    image: File.open(File.join(Rails.root, "/app/assets/images/deal1.jpg"))
-  )
+  image = ""
+  (1..8).each do |object|
+    if object.even?
+      image = "/app/assets/images/deal1.jpg"
+    else
+      image = "/app/assets/images/deal2.jpg"
+    end
+    Deal.create(
+      name: "deal #{object}",
+      description: "cheaper deal #{object}",
+      current_amount: 15.32,
+      previous_amount: 22.32,
+      expiry: 10.days.from_now,
+      available_coupons: 10,
+      sold_coupons: 0,
+      eatery_id: eatery.id,
+      image: File.open(File.join(Rails.root, image))
+    )
+  end
   # User account
   user = User.create(email: "first_user@foodeals.com", password: "testuser123")
 
