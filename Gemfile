@@ -4,7 +4,7 @@ ruby '2.2.3'
 
 gem 'rails', '4.1.11'
 
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.18'
 
 gem 'sass-rails', '~> 4.0.2'
 
