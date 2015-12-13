@@ -15,5 +15,5 @@ TodaysFoodDeals::Application.routes.draw do
     resources :review, only: [:new, :create]
   end
   resources :vendor_deal, only: [:index, :new, :create, :edit, :update, :destroy]
-  resources :coupon_redemption, only: [:index, :show, :update]
+  resources :coupon_redemption, only: [:index, :update]
 end

@@ -16,11 +16,10 @@ class ChargesController < ApplicationController
       description: "Rails Stripe customer",
       currency: "usd"
     )
-    params[:user_id] = current_user.id
+    params[:payment][:user_id] = current_user.id
     params[:payment][:stripe_token] = params[:stripeToken]
     params[:payment][:transaction_status] = charge.status
     payment = Payment.new(payment_params)
-
     if payment.save
       coupon = CouponGeneration.new(
         current_user.id,

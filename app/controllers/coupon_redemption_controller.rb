@@ -13,7 +13,12 @@ class CouponRedemptionController < ApplicationController
   end
  end
 
- def show
-
+ def update
+  coupon = Coupon.find_by(id: params[:id])
+  if coupon.status
+    coupon.update(status: false);
+    flash[:success] = "Successfully redeemed coupon"
+    redirect_to coupon_redemption_index_path
+  end
  end
 end

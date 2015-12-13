@@ -27,7 +27,11 @@
         <td><%= coupon.deal.name %></td>
         <td><%= coupon.created_at %></td>
         <td><%= coupon.deal.expiry %></td>
-        <td><%= link_to("redeem", coupon_redemption_path(coupon.id))%> </td>
+        <% if coupon.status %>
+          <td><%= link_to("redeem", coupon_redemption_path(coupon.id), method: :put)%> </td>
+        <% else %>
+          <td> Coupon redeemed already</td>
+        <% end %>
       </tr>
     <% end %>
   </table>
