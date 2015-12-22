@@ -1,5 +1,5 @@
 TodaysFoodDeals::Application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
   root to: "deal#index"
   get 'about', :to => 'about#about', :as => 'about'
   get 'contact', :to => 'about#contact', :as => 'contact'

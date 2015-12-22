@@ -4,9 +4,9 @@
         <h4 class="modal-title">Sign Up</h4>
       </div>
       <div class="modal-body">
-        <p><ul>Save time by using your Facebook or Twitter account to sign up.</ul>
-        <ul>We'll only import your photo, location. We never post unless you ask us to.</ul></p>
-        <%= link_to("Facebook",'#', class: "btn btn-primary") %>
+        <p><ul>Save time by using your Facebook or Twitter account to Sign In.</ul>
+        <ul>We'll only import your email, photo. We never post unless you ask us to.</ul></p>
+        <%= link_to("Facebook",user_omniauth_authorize_path(:facebook), class: "btn btn-primary") %>
         <%= link_to("Twitter",'#', class: "btn btn-info") %>
       </div>
       <div class="modal-footer">
