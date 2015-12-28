@@ -14,4 +14,24 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def failure
     redirect_to root_path
   end
+
+
+  def twitter
+    @user = User.from_omniauth(request.env["omniauth.auth"])
+
+    if @user.uid.present? && User.find_by(uid: @user.uid)
+      binding.pry
+      sign_in_and_redirect @user, :event => :authentication
+      set_flash_message(:notice, :success, kind: "Twitter") if is_navigational_format?
+
+    elsif @user.uid.present?
+      render 'shared/twitter_email_modal'
+    else
+      session["devise.twitter_data"] = request.env["omniauth.auth"]
+      redirect_to new_user_registration_url
+    end
+  end
+
+
+
 end

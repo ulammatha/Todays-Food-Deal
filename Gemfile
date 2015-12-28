@@ -40,6 +40,7 @@ gem 'searchkick', '~> 0.8.7'
 gem 'stripe', '~> 1.25.0'
 
 gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 
 
 group :doc do

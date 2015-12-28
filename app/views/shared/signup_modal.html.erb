@@ -7,7 +7,7 @@
         <p><ul>Save time by using your Facebook or Twitter account to Sign In.</ul>
         <ul>We'll only import your email, photo. We never post unless you ask us to.</ul></p>
         <%= link_to("Facebook",user_omniauth_authorize_path(:facebook), class: "btn btn-primary") %>
-        <%= link_to("Twitter",'#', class: "btn btn-info") %>
+        <%= link_to("Twitter",user_omniauth_authorize_path(:twitter), class: "btn btn-info") %>
       </div>
       <div class="modal-footer">
         <%= link_to("Close",'#', class: "btn btn-warning", data: {dismiss: "modal"}) %>

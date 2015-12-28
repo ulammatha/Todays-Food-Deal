@@ -257,4 +257,7 @@ Devise.setup do |config|
   config.omniauth :facebook, ENV.fetch('FACEBOOK_APP_ID'), ENV.fetch('FACEBOOK_APP_SECRET'),
                   scope: 'public_profile,email', info_fields: 'email, name'
 
+  config.omniauth :twitter, ENV.fetch('TWITTER_API_KEY'), ENV.fetch('TWITTER_APP_SECRET'),
+                  scope: 'public_profile,email', info_fields: 'email, name'
+
 end

@@ -1,5 +1,8 @@
 TodaysFoodDeals::Application.routes.draw do
-  devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
+  devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks"}
+
+
+
   root to: "deal#index"
   get 'about', :to => 'about#about', :as => 'about'
   get 'contact', :to => 'about#contact', :as => 'contact'
@@ -16,4 +19,5 @@ TodaysFoodDeals::Application.routes.draw do
   end
   resources :vendor_deal, only: [:index, :new, :create, :edit, :update, :destroy]
   resources :coupon_redemption, only: [:index, :update]
+  resources :twitter_users, only: [:create]
 end
