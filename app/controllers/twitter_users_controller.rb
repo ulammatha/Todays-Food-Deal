@@ -1,7 +1,6 @@
 class TwitterUsersController < ApplicationController
   skip_before_action :authenticate_user!, only: [:create]
   def create
-    binding.pry
     @user = User.new(twitter_user_params)
     if @user.save
       flash[:notice] = "Successfully authenticated with Twitter account"
