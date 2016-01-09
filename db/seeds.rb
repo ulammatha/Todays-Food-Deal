@@ -20,11 +20,11 @@
     user_id: vendor.id)
 
   image = ""
-  (1..8).each do |object|
+  (1..2).each do |object|
     if object.even?
       image = "/app/assets/images/deal1.jpg"
     else
-      image = "/app/assets/images/deal2.jpg"
+      image = "/app/assets/images/deal1.jpg"
     end
     Deal.create(
       name: "deal #{object}",
