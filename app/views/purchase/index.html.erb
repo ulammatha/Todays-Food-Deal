@@ -14,7 +14,12 @@
         <td><%= payment.updated_at.to_formatted_s(:long) %></td>
         <td><%= payment.deal.current_amount %></td>
         <td><%= payment.coupon.code%> </td>
-        <td><%= link_to "Review", new_purchase_review_path(purchase_id: payment.coupon.id)%> </td>
+        <% if user_reviewed?(payment.deal) %>
+          <td>Feedback provided </td>
+        <% else %>
+          <td><%= link_to "Review", new_purchase_review_path(purchase_id: payment.coupon.id)%>
+          </td>
+        <% end %>
       </tr>
     <% end %>
   </table>

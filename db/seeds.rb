@@ -20,7 +20,7 @@
     user_id: vendor.id)
 
   image = ""
-  (1..2).each do |object|
+  (1..8).each do |object|
     if object.even?
       image = "/app/assets/images/deal1.jpg"
     else
