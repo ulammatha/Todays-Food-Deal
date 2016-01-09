@@ -12,7 +12,11 @@ class VendorDealController < ApplicationController
 
   def index
     eatery_ids = current_user.eateries.pluck(:id)
-    @deals = Deal.where(eatery_id: eatery_ids)
+    if params[:search]
+      @deals = Deal.search params[:search], where: {eatery_id: eatery_ids}, fields: [:name]
+    else
+      @deals = Deal.where(eatery_id: eatery_ids)
+    end
     render 'shared/deal_index'
   end
 

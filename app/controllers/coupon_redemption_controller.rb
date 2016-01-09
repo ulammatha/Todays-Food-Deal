@@ -9,7 +9,7 @@ class CouponRedemptionController < ApplicationController
   if params[:coupon_id].to_s.strip.length == 0
       @coupons = Coupon.all
     else
-      @coupons = Coupon.search params[:id]
+      @coupons = Coupon.search params[:coupon_id], fields: [:code]
   end
  end
 
