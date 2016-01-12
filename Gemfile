@@ -55,6 +55,7 @@ group  :development, :test do
   gem 'dotenv-rails'
   gem 'rspec-rails', '~> 3.3.3'
   gem 'shoulda-matchers', '~> 2.8.0'
+  gem 'brakeman', require: false
 end
 
 group :production do
