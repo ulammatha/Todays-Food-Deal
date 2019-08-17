@@ -18,7 +18,7 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 1.2'
 
-gem 'bootstrap-sass', '~> 3.2.0.1'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
